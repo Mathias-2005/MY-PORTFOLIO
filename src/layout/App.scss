@@ -1,0 +1,19 @@
+@import '../components/Modules.scss';
+
+body {
+    background-color: $background-color-white;
+    padding: 0;
+    margin: 0;
+}
+
+// AJOUT D'UNE DIV CONTAINER POUR CONTENIR LE MAIN <OUTLET />
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+// FLEX: 1 POUR QUE LE CONTENUE MAIN PRENNE TOUTE LA PLACE DISPONIBLE
+.main-content {
+    flex: 1;
+}

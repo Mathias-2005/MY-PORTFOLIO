@@ -1,0 +1,36 @@
+@import '../components/Modules.scss';
+
+.about {
+    @include margin-desktop;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        font-family: $font-family-;
+        margin: 100px 0px;
+    }
+
+    &__h3 {
+        color: $text-color-white;
+        margin: 10px 0px;
+    }
+
+    &__title {
+        color: $title-color-white;
+        margin: 0;
+    }
+
+    &__p {
+        color: $text-color-white;
+        margin: 10px 0px;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+}
