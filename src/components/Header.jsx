@@ -17,7 +17,7 @@ function Header() {
                     <NavLink className='container__link'>Contact</NavLink>
                 </div>
             </div>
-            <hr />
+            <div className="container__line"></div>
         </>
     )
 }
