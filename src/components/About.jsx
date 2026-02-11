@@ -4,7 +4,7 @@ function About() {
 
     return (
         <>
-            <div className='about'>
+            <div className='about' id='about'>
                 <div className='about__info'>
                     <h3 className='about__h3'>Développeur Web Junior</h3>
                     <h1 className='about__title'>Mathias Mailly de pinho</h1>
@@ -17,7 +17,7 @@ function About() {
                             className='about__btn-cv'
                         >
                             <button className='about__btn-cv'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-download w-5 h-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-download w-5 h-5">
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                     <polyline points="7 10 12 15 17 10"></polyline>
                                     <line x1="12" x2="12" y1="15" y2="3"></line>
@@ -39,7 +39,7 @@ function About() {
                         </a>
                         <a href="mailto:mathiasmaillydepinho@gmail.com">
                             <button className='about__btn-email'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail w-5 h-5"><rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail w-5 h-5"><rect width="20" height="16" x="2" y="4" rx="2"></rect>
                                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                                 </svg>
                             </button>

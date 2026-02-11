@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
 import '../components/Header.scss';
+
 
 function Header() {
 
@@ -11,10 +11,10 @@ function Header() {
                     <h2>Mathias</h2>
                 </div>
                 <div className="container__links">
-                    <NavLink className='container__link'>Accueil</NavLink>
-                    <NavLink className='container__link'>Projets</NavLink>
-                    <NavLink className='container__link'>Compétences</NavLink>
-                    <NavLink className='container__link'>Contact</NavLink>
+                    <a href="#about" className='container__link'>Accueil</a>
+                    <a href="#projects" className='container__link'>Projets</a>
+                    <a className='container__link'>Compétences</a>
+                    <a className='container__link'>Contact</a>
                 </div>
             </div>
             <div className="container__line"></div>

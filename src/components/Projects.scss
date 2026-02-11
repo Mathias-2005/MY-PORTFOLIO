@@ -1,0 +1,51 @@
+@import '../components/Modules.scss';
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family-;
+    @include margin-desktop;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        color: $title-color-white;
+        margin: 50px 0px 100px 0px; 
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        padding: 25px;
+        width: 300px;
+        height: 250px;
+        background-color: $background-color-cards-white;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+    &__card:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+        object-fit: fill;
+    }
+
+    &__name {
+        color: $text-color-white;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__name:hover {
+        text-decoration: underline;
+    }
+}

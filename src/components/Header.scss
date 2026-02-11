@@ -1,17 +1,23 @@
 @import '../components/Modules.scss';
 
 .container {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0px 300px;
+    background-color: #F4FAFF;
+    font-family: $font-family-tilte;
 
     &__logo {
         display: flex;
         align-items: center;
         gap: 20px;
         color: $title-color-white;
-        font-family: $font-family-tilte;
     }
     
     img {
@@ -27,11 +33,11 @@
 
     &__link {
         color: $text-color-white;
+        cursor: pointer;
         text-decoration: none;
-        font-family: $font-family-tilte;
     }
 
-    &__line {
-        border: 1px solid #D5EFFF;
+    &__link:hover {
+        text-decoration: underline;
     }
 }
