@@ -14,7 +14,7 @@ function Header() {
                     <a href="#about" className='container__link'>Accueil</a>
                     <a href="#projects" className='container__link'>Projets</a>
                     <a href='#skills' className='container__link'>Compétences</a>
-                    <a className='container__link'>Contact</a>
+                    <a href='#contact' className='container__link'>Contact</a>
                 </div>
             </div>
             <div className="container__line"></div>
