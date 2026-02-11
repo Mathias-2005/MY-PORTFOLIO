@@ -1,0 +1,82 @@
+@import '../components/Modules.scss';
+
+.skills {
+    @include margin-desktop;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $font-family-;
+    color: $text-color-white;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        color: $title-color-white;
+        margin: 100px 0px;
+    }
+
+    &__title-techs {
+        display: flex;
+    }
+
+    &__title-tech {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    &__front-back {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__techs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+        height: 100px;
+        background-color: $background-color-cards-white;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    &__container {
+        padding: 10px;
+        background-color: #C2E5FF;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    &__container:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    &__logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__title-tools {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px 10px 0px;
+    }
+
+    &__tools {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tool {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+        height: 100px;
+        background-color: $background-color-cards-white;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+}

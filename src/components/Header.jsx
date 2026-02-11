@@ -13,7 +13,7 @@ function Header() {
                 <div className="container__links">
                     <a href="#about" className='container__link'>Accueil</a>
                     <a href="#projects" className='container__link'>Projets</a>
-                    <a className='container__link'>Compétences</a>
+                    <a href='#skills' className='container__link'>Compétences</a>
                     <a className='container__link'>Contact</a>
                 </div>
             </div>
