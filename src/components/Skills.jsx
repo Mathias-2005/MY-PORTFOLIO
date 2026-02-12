@@ -2,7 +2,6 @@ import '../components/Skills.scss';
 
 function Skills() {
 
-
     return (
         <>
             <div className='skills' id='skills'>

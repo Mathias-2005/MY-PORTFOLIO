@@ -17,12 +17,13 @@
 
     &__title-techs {
         display: flex;
+        justify-content: space-between;
     }
 
     &__title-tech {
         display: flex;
+        width: 40%;
         justify-content: center;
-        width: 50%;
     }
 
     &__front-back {
