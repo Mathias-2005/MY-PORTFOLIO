@@ -10,7 +10,7 @@ function Footer() {
                 </div>
                 <div className='footer__links'>
                     <a className='footer__link' href="https://github.com/Mathias-2005" target='_blank'>GitHub</a>
-                    <a className='footer__link' href="#" target='_blank'>LinkedIn</a>
+                    <a className='footer__link' href="https://www.linkedin.com/in/mathias-mailly-de-pinho-4b7b303b0/" target='_blank'>LinkedIn</a>
                     <a className='footer__link' href="mailto:mathiasmaillydepinho@gmail.com" target='_blank'>Email</a>
                 </div>
             </div>

@@ -59,6 +59,10 @@
 // MEDIA QUERIES DE 768 PX
 @media (max-width: $layout-breakpoint-768) {
     .container {
-        padding: 0px 40px;
+        padding: 30px 40px;
+
+        &__title {
+            display: none;
+        }
     }
 }

@@ -66,5 +66,15 @@
 @media (max-width: $layout-breakpoint-768) {
     .projects {
         @include margin-768;
+
+        &__cards {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        &__card {
+            width: calc(100% - 25px);
+        }
     }
 }

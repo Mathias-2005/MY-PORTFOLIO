@@ -146,6 +146,18 @@
 @media (max-width: $layout-breakpoint-1024) {
     .contact {
         @include margin-1024;
+
+        &__info {
+            flex-direction: column;
+        }
+
+        &__name {
+            width: 100%;
+        }
+
+        &__email {
+            width: 100%;
+        }
     }
 }
 

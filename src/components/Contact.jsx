@@ -40,7 +40,7 @@ function Contact() {
                     </div>
                     <div>
                         <p>Message *</p>
-                        <label htmlFor="contact__message">
+                        <label htmlFor="message">
                             <textarea
                                 value={formData.message}
                                 onChange={(e) => {

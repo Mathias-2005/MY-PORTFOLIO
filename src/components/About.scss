@@ -36,11 +36,16 @@
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
-    &__btn {
+    &__btn-1 {
         margin: 20px 0px;
         display: flex;
         align-items: center;
         gap: 20px;
+    }
+
+    &__btn-2 {
+        display: flex;
+        gap: 30px;
     }
 
     &__btn-cv {
@@ -116,6 +121,11 @@
 @media (max-width: $layout-breakpoint-1440) {
     .about {
         @include margin-1440;
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
     }
 }
 
@@ -123,6 +133,16 @@
 @media (max-width: $layout-breakpoint-1024) {
     .about {
         @include margin-1024;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        &__btn-1 {
+            flex-direction: column;
+            align-items: start;
+        }
     }
 }
 
