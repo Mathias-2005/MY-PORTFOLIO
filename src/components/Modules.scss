@@ -12,3 +12,21 @@ $font-family-: 'Inter', sans-serif;
 @mixin margin-desktop {
     margin: 50px 300px;
 }
+@mixin margin-1440 {
+    margin: 50px 200px;
+}
+@mixin margin-1024 {
+    margin: 50px 100px;
+}
+@mixin margin-768 {
+    margin: 40px 40px;
+}
+@mixin margin-375 {
+    margin: 20px 20px;
+}
+// BREAKPOINT
+$layout-breakpoint-1440: 1440px;
+$layout-breakpoint-1024: 1024px;
+$layout-breakpoint-768: 768px;
+$layout-breakpoint-375: 375px;
+

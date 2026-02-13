@@ -13,11 +13,49 @@
         margin: 0;
     }
 
-    &__404-p {
+    &__p {
         color: $text-color-white;
     }
 
-    &__404-a {
+    &__a {
         color: $text-color-white;
+    }
+}
+
+// MEDIA QUERIES DE 768 PX
+@media (max-width: $layout-breakpoint-768) {
+    .error {
+        margin: 250px 0px 0px 0px;
+
+        &__404 {
+            font-size: 120px;
+        }
+
+        &__p {
+            font-size: 14px;
+        }
+
+        &__a {
+            font-size: 12px;
+        }
+    }
+}
+
+// MEDIA QUERIES DE 375 PX
+@media (max-width: $layout-breakpoint-375) {
+    .error {
+        margin: 250px 0px 0px 0px;
+
+        &__404 {
+            font-size: 100px;
+        }
+
+        &__p {
+            font-size: 12px;
+        }
+
+        &__a {
+            font-size: 10px;
+        }
     }
 }

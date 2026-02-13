@@ -7,9 +7,9 @@ function Error() {
         <>
             <div className="error">
                 <p className="error__404">404</p>
-                <p className="error__404-p">Oups! La page que vous demandez n'existe pas.</p>
+                <p className="error__p">Oups! La page que vous demandez n'existe pas.</p>
                 <Link to={"/"}>
-                    <p className="error__404-a">Retourner sur la page d'accueil</p>
+                    <p className="error__a">Retourner sur la page d'accueil</p>
                 </Link>
             </div>
         </>

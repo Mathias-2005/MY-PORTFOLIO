@@ -19,6 +19,7 @@
     }
 
     &__card {
+        width: 25%;
         padding: 25px;
         height: 250px;
         background-color: $background-color-cards-white;
@@ -33,9 +34,9 @@
     }
 
     img {
-        width: 300px;
+        width: 100%;
         height: 200px;
-        object-fit: fill;
+        object-fit: center;
         border-radius: 5px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
@@ -44,5 +45,26 @@
         color: $text-color-white;
         display: flex;
         justify-content: center;
+    }
+}
+
+// MEDIA QUERIES DE 1440 PX
+@media (max-width: $layout-breakpoint-1440) {
+    .projects {
+        @include margin-1440;
+    }
+}
+
+// MEDIA QUERIES DE 1024 PX
+@media (max-width: $layout-breakpoint-1024) {
+    .projects {
+        @include margin-1024;
+    }
+}
+
+// MEDIA QUERIES DE 768 PX
+@media (max-width: $layout-breakpoint-768) {
+    .projects {
+        @include margin-768;
     }
 }

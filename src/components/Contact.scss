@@ -134,3 +134,24 @@
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 }
+
+// MEDIA QUERIES DE 1440 PX
+@media (max-width: $layout-breakpoint-1440) {
+    .contact {
+        @include margin-1440;
+    }
+}
+
+// MEDIA QUERIES DE 1024 PX
+@media (max-width: $layout-breakpoint-1024) {
+    .contact {
+        @include margin-1024;
+    }
+}
+
+// MEDIA QUERIES DE 768 PX
+@media (max-width: $layout-breakpoint-768) {
+    .contact {
+        @include margin-768;
+    }
+}

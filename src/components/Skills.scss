@@ -81,3 +81,24 @@
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
 }
+
+// MEDIA QUERIES DE 1440 PX 
+@media (max-width: $layout-breakpoint-1440) {
+    .skills {
+        @include margin-1440;
+    }
+}
+
+// MEDIA QUERIES DE 1024 PX 
+@media (max-width: $layout-breakpoint-1024) {
+    .skills {
+        @include margin-1024;
+    }
+}
+
+// MEDIA QUERIES DE 768 PX 
+@media (max-width: $layout-breakpoint-768) {
+    .skills {
+        @include margin-768;
+    }
+}

@@ -41,3 +41,24 @@
         text-decoration: underline;
     }
 }
+
+// MEDIA QUERIES DE 1440 PX
+@media (max-width: $layout-breakpoint-1440) {
+    .container {
+        padding: 0px 200px;
+    }
+}
+
+// MEDIA QUERIES DE 1024 PX
+@media (max-width: $layout-breakpoint-1024) {
+    .container {
+        padding: 0px 100px;
+    }
+}
+
+// MEDIA QUERIES DE 768 PX
+@media (max-width: $layout-breakpoint-768) {
+    .container {
+        padding: 0px 40px;
+    }
+}
