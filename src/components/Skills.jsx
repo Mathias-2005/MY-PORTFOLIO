@@ -6,38 +6,36 @@ function Skills() {
         <>
             <div className='skills' id='skills'>
                 <h2 className='skills__title'>Compétences Téchniques et Outils</h2>
-                <div className='skills__title-techs'>
-                    <div className='skills__title-tech'>
-                        <h4>Frontend</h4>
-                    </div>
-                    <div className='skills__title-tech'>
-                        <h4>Backend</h4>
-                    </div>
-                </div>
                 <div className='skills__front-back'>
-                    <div className='skills__techs'>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/html-css.png" alt="logo html et css" />
-                        </div>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/sass.png" alt="logo html et css" />
-                        </div>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/javascript.webp" alt="logo html et css" />
-                        </div>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/react.png" alt="logo html et css" />
+                    <div className='skills__front-back-container'>
+                        <h4 className='skills__title-tech'>Frontend</h4>
+                        <div className='skills__techs'>
+                            <div className='skills__container'>
+                                <img className='skills__logo' src="../src/assets/images/html-css.png" alt="logo html et css" />
+                            </div>
+                            <div className='skills__container'>
+                                <img className='skills__logo' src="../src/assets/images/sass.png" alt="logo html et css" />
+                            </div>
+                            <div className='skills__container'>
+                                <img className='skills__logo' src="../src/assets/images/javascript.webp" alt="logo html et css" />
+                            </div>
+                            <div className='skills__container'>
+                                <img className='skills__logo' src="../src/assets/images/react.png" alt="logo html et css" />
+                            </div>
                         </div>
                     </div>
-                    <div className='skills__techs'>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/nodejs.png" alt="logo html et css" />
-                        </div>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/mongodb.png" alt="logo html et css" />
-                        </div>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/api.png" alt="logo html et css" />
+                    <div className='skills__front-back-container'>
+                        <h4 className='skills__title-tech'>Backend</h4>
+                        <div className='skills__techs'>
+                            <div className='skills__container'>
+                                <img className='skills__logo' src="../src/assets/images/nodejs.png" alt="logo html et css" />
+                            </div>
+                            <div className='skills__container'>
+                                <img className='skills__logo' src="../src/assets/images/mongodb.png" alt="logo html et css" />
+                            </div>
+                            <div className='skills__container'>
+                                <img className='skills__logo' src="../src/assets/images/api.png" alt="logo html et css" />
+                            </div>
                         </div>
                     </div>
                 </div>

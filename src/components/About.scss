@@ -150,5 +150,36 @@
 @media (max-width: $layout-breakpoint-768) {
     .about {
         @include margin-768;
+        flex-direction: column-reverse;
+
+        &__info {
+            align-items: center;
+        }
+
+        &__btn-1 {
+            margin: 80px 0px 0px 0px;
+        }
+        
+    }
+}
+
+// MEDIA QUERIES DE 375 PX 
+@media (max-width: $layout-breakpoint-375) {
+    .about {
+        @include margin-375;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        &__info {
+            align-items: center;
+            margin: 50px 0px 30px 0px;
+        }
+
+        &__btn-1 {
+            margin: 80px 0px 0px 0px;
+        }
     }
 }

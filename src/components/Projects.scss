@@ -52,6 +52,10 @@
 @media (max-width: $layout-breakpoint-1440) {
     .projects {
         @include margin-1440;
+
+        &__card {
+            width: 23%;
+        }
     }
 }
 
@@ -59,6 +63,15 @@
 @media (max-width: $layout-breakpoint-1024) {
     .projects {
         @include margin-1024;
+
+        &__card {
+            width: 20%;
+            height: 200px;
+        }
+
+        img {
+            height: 150px;
+        }
     }
 }
 
@@ -75,6 +88,22 @@
 
         &__card {
             width: calc(100% - 25px);
+        }
+    }
+}
+
+// MEDIA QUERIES DE 375 PX
+@media (max-width: $layout-breakpoint-375) {
+    .projects {
+        @include margin-375;
+
+        &__card {
+            padding: 15px;
+            height: 150px;
+        }
+
+        img {
+            height: 100px;
         }
     }
 }

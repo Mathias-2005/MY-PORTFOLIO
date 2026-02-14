@@ -165,5 +165,20 @@
 @media (max-width: $layout-breakpoint-768) {
     .contact {
         @include margin-768;
+
+        &__container {
+            padding: 30px;
+        }
+    }
+}
+
+// MEDIA QUERIES DE 375 PX
+@media (max-width: $layout-breakpoint-375) {
+    .contact {
+        @include margin-375;
+
+        &__container {
+            padding: 20px;
+        }
     }
 }
