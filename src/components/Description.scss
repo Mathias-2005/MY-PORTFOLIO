@@ -1,0 +1,48 @@
+@import '../components/Header.scss';
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-family-;
+    @include margin-desktop;
+
+    &__title {
+        color: $title-color-white;
+        margin: 100px 0px;
+    }
+
+    &__p {
+        color: $text-color-white;
+    }
+}
+
+// MEDIA QUERIES DE 1440 PX 
+@media (max-width: $layout-breakpoint-1440) {
+    .description {
+        @include margin-1440;
+    }
+}
+
+// MEDIA QUERIES DE 1024 PX 
+@media (max-width: $layout-breakpoint-1024) {
+    .description {
+        @include margin-1024;
+    }
+}
+
+// MEDIA QUERIES DE 768 PX 
+@media (max-width: $layout-breakpoint-768) {
+    .description {
+        @include margin-768;
+    }
+}
+
+// MEDIA QUERIES DE 375 PX
+@media (max-width: $layout-breakpoint-375) {
+
+    .description {
+        @include margin-375;
+    }
+
+}
