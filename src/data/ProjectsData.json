@@ -1,9 +1,9 @@
 {
     "Projects": [
         {
-            "id": 1,
+            "id": "1",
             "title": "Sophie Bluel",
-            "description": "Ce que fait vraiment votre projet",
+            "description": "Projet – Page web dynamique en JavaScript",
             "technologies": [
                 "HTML",
                 "CSS",
@@ -11,13 +11,13 @@
             ],
             "github": "https://github.com/Mathias-2005/P3-OPENCLASSROOMS-SOPHIE-BLUEL",
             "demo": "https://mathias-2005.github.io/P3-OPENCLASSROOMS-SOPHIE-BLUEL/",
-            "image": "../src/assets/images/Screenshot_Sophie.png"
+            "picture": "../src/assets/images/Screenshot_Sophie.png"
         },
 
         {
-            "id": 2,
+            "id": "2",
             "title": "Kasa",
-            "description": "Ce que fait vraiment votre projet",
+            "description": "",
             "technologies": [
                 "JAVASCRIPT",
                 "REACT",
@@ -25,13 +25,13 @@
             ],
             "github": "https://github.com/Mathias-2005/P5-Kasa",
             "demo": "https://mathias-2005.github.io/P5-Kasa/",
-            "image": "../src/assets/images/Screenshot_Kasa.png"
+            "picture": "../src/assets/images/Screenshot_Kasa.png"
         },
 
         {
-            "id": 3,
+            "id": "3",
             "title": "Mon vieux grimoire",
-            "description": "Ce que fait vraiment votre projet",
+            "description": "",
             "technologies": [
                 "NODEJS",
                 "API REST",
@@ -39,7 +39,7 @@
             ],
             "github": "https://github.com/Mathias-2005/P6-OPENCLASSROOMS-BACKEND",
             "demo": "https://votre-demo.netlify.app",
-            "image": "../src/assets/images/Screenshot_Monvieuxgrimoire.png"
+            "picture": "../src/assets/images/Screenshot_Monvieuxgrimoire.png"
         }
     ]
 }

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import '../components/Header.scss';
 
 
@@ -11,7 +12,7 @@ function Header() {
                     <h2 className='container__title'>Mathias</h2>
                 </div>
                 <div className="container__links">
-                    <a href="#about" className='container__link'>Accueil</a>
+                    <NavLink to="/" className='container__link'>Accueil</NavLink>
                     <a href="#projects" className='container__link'>Projets</a>
                     <a href='#skills' className='container__link'>Compétences</a>
                     <a href='#contact' className='container__link'>Contact</a>

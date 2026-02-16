@@ -1,5 +1,5 @@
 import About from "../components/About";
-import Projects from "../components/Projects";
+import Cards from "../components/Cards";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 
@@ -8,7 +8,7 @@ function Home() {
     return (
         <>
             <About />
-            <Projects />
+            <Cards />
             <Skills />
             <Contact />
         </>

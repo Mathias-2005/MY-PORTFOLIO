@@ -1,0 +1,113 @@
+@import '../components/Modules.scss';
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    @include margin-desktop;
+    font-family: $font-family-;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin: 100px 0px;
+        color: $title-color-white;
+    }
+
+    img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: box-shadow 0.3s ease;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    img:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__link {
+        text-decoration: none;
+    }
+
+    &__link-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 180px;
+        height: 40px;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        letter-spacing: 0.5px;
+        background: $btn-background-color-white;
+        border: 2px solid $btn-border-color-white;
+        color: $title-color-white;
+        cursor: pointer;
+    }
+
+    &__link-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: $btn-border-color-white;
+        transition: left 0.5s ease;
+        z-index: -1;
+    }
+
+    &__link-btn:hover::before {
+        left: 0;
+    }
+}
+
+// MEDIA QUERIES DE 1440 PX 
+@media (max-width: $layout-breakpoint-1440) {
+    .preview {
+        @include margin-1440;
+    }
+}
+
+// MEDIA QUERIES DE 1024 PX 
+@media (max-width: $layout-breakpoint-1024) {
+    .preview {
+        @include margin-1024;
+    }
+}
+
+// MEDIA QUERIES DE 768 PX 
+@media (max-width: $layout-breakpoint-768) {
+    .preview {
+        @include margin-768;
+
+        &__links {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+}
+
+// MEDIA QUERIES DE 375 PX
+@media (max-width: $layout-breakpoint-375) {
+
+    .preview {
+        @include margin-375;
+
+        &__links {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+
+}
