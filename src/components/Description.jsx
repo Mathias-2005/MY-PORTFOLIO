@@ -9,10 +9,12 @@ function Description() {
 
     return (
         <>
-        <div className='description'>
-             <h2 className='description__title'>Description</h2>
-             <p className='description__p'>{data.description}</p>
-        </div>
+            <div className='description'>
+                <h2 className='description__title'>Description</h2>
+                <div className='description__container'>
+                    <p className='description__p'>{data.description}</p>
+                </div>
+            </div>
         </>
     )
 }

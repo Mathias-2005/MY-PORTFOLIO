@@ -3,6 +3,7 @@ import Error from '../pages/Error';
 import ProjectData from '../data/ProjectsData.json';
 import PreviewLink from "../components/PreviewLink";
 import Description from "../components/Description";
+import Stack from "../components/Stack";
 
 function Project() {
     
@@ -20,6 +21,7 @@ function Project() {
     return (
         <>
             <PreviewLink />
+            <Stack />
             <Description />
         </>
     )

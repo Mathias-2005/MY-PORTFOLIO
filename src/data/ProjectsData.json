@@ -6,7 +6,6 @@
             "description": "Projet – Page web dynamique en JavaScript. Développement d’une application front-end dynamique pour le portfolio d’une architecte d’intérieur, dans un contexte simulant une mission en agence web. \nn Ce projet met en œuvre : La manipulation du DOM en JavaScript. La gestion des événements utilisateurs. La récupération et l’exploitation de données via une API. L’intégration en HTML/CSS et JavaScript. Il démontre ma capacité à concevoir des interfaces interactives, à structurer un code front-end propre et à répondre à un cahier des charges dans un environnement proche du monde professionnel.",
             "technologies": [
                 "HTML",
-                "CSS",
                 "JAVASCRIPT"
             ],
             "github": "https://github.com/Mathias-2005/P3-OPENCLASSROOMS-SOPHIE-BLUEL",
@@ -34,7 +33,7 @@
             "description": "API REST - Mon Vieux Grimoire. Développement du back-end d'un site de notation de livres pour une chaîne de librairies du Vieux Lille, dans le cadre d'une formation en développement web. Création d'une API RESTful sécurisée permettant aux utilisateurs de noter et gérer des ouvrages littéraires. Technologies : Node.js/Express/MongoDB/JavaScript. Réalisations clés : Conception et implémentation d'un modèle de données conforme aux spécifications. Développement d'opérations CRUD complètes et sécuriséesMise en place d'un système de stockage sécurisé des donnéesGestion de l'authentification et autorisation des utilisateurs. Optimisation des images (format WebP, compression)Respect des bonnes pratiques Green Code pour un code plus durableRésultat : API fonctionnelle, sécurisée et performante, avec gestion complète des livres, notations et utilisateurs. Code accessible sur GitHub et entièrement documenté.",
             "technologies": [
                 "NODEJS",
-                "API REST",
+                "API",
                 "MONGODB"
             ],
             "github": "https://github.com/Mathias-2005/P6-OPENCLASSROOMS-BACKEND",

@@ -12,6 +12,13 @@
         margin: 100px 0px;
     }
 
+    &__container {
+        background-color: $background-color-cards-white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
     &__p {
         color: $text-color-white;
     }
@@ -35,6 +42,10 @@
 @media (max-width: $layout-breakpoint-768) {
     .description {
         @include margin-768;
+
+        &__container {
+            padding: 15px;
+        }
     }
 }
 
@@ -43,6 +54,14 @@
 
     .description {
         @include margin-375;
+
+        &__container {
+            padding: 10px;
+        }
+
+        &__p {
+            font-size: 14px;
+        }
     }
 
 }
