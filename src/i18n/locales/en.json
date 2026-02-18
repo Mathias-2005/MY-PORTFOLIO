@@ -1,0 +1,51 @@
+{
+    "Header": {
+        "title": "Mathias",
+        "home": "Home",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact"
+    },
+    "About": {
+        "title-h3": "Junior Web Developer",
+        "title": "Mathias Mailly de pinho",
+        "description": "Graduated in a web development, specializing in the MERN stack. \n Passionate about creating modern, high-performance, and intuitive web applications.",
+        "cv": "Download CV"
+    },
+    "Cards": {
+        "title": "Completed Projects"
+    },
+    "Skills": {
+        "title": "Technical Skills and Tools",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "tool": "Tools"
+    },
+    "PreviewLink": {
+        "title": "Links",
+        "repository": "Repository",
+        "website": "Website"
+    },
+    "Stack": {
+        "title": "Technologies used"
+    },
+    "Description": {
+        "title": "Description"
+    },
+    "Contact": {
+        "title": "Contact me",
+        "name": "Name *",
+        "email": "Email *",
+        "message": "Message *",
+        "placeholder-name": "Your name",
+        "placeholder-email": "your@email.com",
+        "placeholder-message": "Your message...",
+        "send": "Send"
+    },
+  "Footer": {
+        "copyright": "© 2026 Mailly de pinho Mathias. All rights reserved.",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "email": "Email"
+    }
+}

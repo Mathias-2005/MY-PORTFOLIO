@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import '../components/Contact.scss';
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+
+    const { t } = useTranslation();
 
     const [formData, SetFormData] = useState({
         name: '',
@@ -15,31 +18,31 @@ function Contact() {
     return (
         <>
             <div className='contact' id='contact'>
-                <h2 className='contact__title'>Prenons Contact</h2>
+                <h2 className='contact__title'>{t('Contact.title')}</h2>
                 <div className='contact__container'>
                     <div className='contact__info'>
                         <div className='contact__name'>
-                            <p>Nom *</p>
+                            <p>{t('Contact.name')}</p>
                             <label htmlFor="name">
                                 <textarea
                                     id='name'
-                                    placeholder='Votre nom'
+                                    placeholder={t('Contact.placeholder-name')}
                                     className='contact__input' />
                             </label>
                         </div>
                         <div className='contact__email'>
-                            <p>Email *</p>
+                            <p>{t('Contact.email')}</p>
                             <label htmlFor="email">
                                 <textarea
                                     type="email"
                                     id='email'
-                                    placeholder='votre@email.com'
+                                    placeholder={t('Contact.placeholder-email')}
                                     className='contact__input' />
                             </label>
                         </div>
                     </div>
                     <div>
-                        <p>Message *</p>
+                        <p>{t('Contact.message')}</p>
                         <label htmlFor="message">
                             <textarea
                                 value={formData.message}
@@ -51,12 +54,12 @@ function Contact() {
                                 maxLength={MaxChars}
                                 id='message'
                                 className='contact__input-message'
-                                placeholder='Votre message...' />
+                                placeholder={t('Contact.placeholder-message')} />
                         </label>
                         <span className='contact__chars'>{formData.message.length} / {MaxChars}</span>
                     </div>
                     <div className='contact__btn'>
-                        <button type='submit' className='contact__submit'>Envoyer</button>
+                        <button type='submit' className='contact__submit'>{t('Contact.send')}</button>
                     </div>
                 </div>
             </div>

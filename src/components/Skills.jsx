@@ -1,14 +1,17 @@
 import '../components/Skills.scss';
+import { useTranslation } from 'react-i18next';
 
 function Skills() {
+
+    const { t } = useTranslation();
 
     return (
         <>
             <div className='skills' id='skills'>
-                <h2 className='skills__title'>Compétences Téchniques et Outils</h2>
+                <h2 className='skills__title'>{t('Skills.title')}</h2>
                 <div className='skills__front-back'>
                     <div className='skills__front-back-container'>
-                        <h4 className='skills__title-tech'>Frontend</h4>
+                        <h4 className='skills__title-tech'>{t('Skills.frontend')}</h4>
                         <div className='skills__techs'>
                             <div className='skills__container'>
                                 <img className='skills__logo' src="../src/assets/images/html-css.png" alt="logo html et css" title='HTML/CSS'/>
@@ -25,7 +28,7 @@ function Skills() {
                         </div>
                     </div>
                     <div className='skills__front-back-container'>
-                        <h4 className='skills__title-tech'>Backend</h4>
+                        <h4 className='skills__title-tech'>{t('Skills.backend')}</h4>
                         <div className='skills__techs'>
                             <div className='skills__container'>
                                 <img className='skills__logo' src="../src/assets/images/nodejs.png" alt="logo NodeJS" title='NodeJS'/>
@@ -40,7 +43,7 @@ function Skills() {
                     </div>
                 </div>
                 <div className='skills__title-tools'>
-                    <h4>Outils</h4>
+                    <h4>{t('Skills.tool')}</h4>
                 </div>
                 <div className='skills__tools'>
                     <div className='skills__tool'>

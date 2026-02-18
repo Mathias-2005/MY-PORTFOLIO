@@ -1,15 +1,17 @@
 import '../components/About.scss'
+import { useTranslation } from 'react-i18next';
 
 function About() {
+
+    const { t } = useTranslation();
 
     return (
         <>
             <div className='about' id='about'>
                 <div className='about__info'>
-                    <h3 className='about__h3'>Développeur Web Junior</h3>
-                    <h1 className='about__title'>Mathias Mailly de pinho</h1>
-                    <p className='about__p'>Diplômé BAC+2 en développement web, spécialisé dans la stack MERN.
-                        <br /> Passionné par la création d'applications web modernes, performantes et intuitives.</p>
+                    <h3 className='about__h3'>{t('About.title-h3')}</h3>
+                    <h1 className='about__title'>{t('About.title')}</h1>
+                    <p className='about__p'>{t('About.description')}</p>
                     <div className='about__btn-1'>
                         <a
                             href="/cv.pdf"
@@ -22,7 +24,7 @@ function About() {
                                     <polyline points="7 10 12 15 17 10"></polyline>
                                     <line x1="12" x2="12" y1="15" y2="3"></line>
                                 </svg>
-                                <p>Télécharger CV</p>
+                                <p>{t('About.cv')}</p>
                             </button>
                         </a>
                         <div className='about__btn-2'>

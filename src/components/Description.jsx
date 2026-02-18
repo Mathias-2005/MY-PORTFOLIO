@@ -1,8 +1,11 @@
 import '../components/Description.scss';
 import { useParams } from "react-router-dom";
 import ProjectsData from '../data/ProjectsData.json';
+import { useTranslation } from 'react-i18next';
 
 function Description() {
+
+    const { t } = useTranslation();
 
     const { id } = useParams();
     const data = ProjectsData.Projects.find(item => item.id === id);
@@ -10,7 +13,7 @@ function Description() {
     return (
         <>
             <div className='description'>
-                <h2 className='description__title'>Description</h2>
+                <h2 className='description__title'>{t('Description.title')}</h2>
                 <div className='description__container'>
                     <p className='description__p'>{data.description}</p>
                 </div>
