@@ -7,15 +7,15 @@ function App() {
 
     return (
         <div className='app-container'>
-            <header>
-                <Header />
-            </header>
-            <main className='main-content'>
-                <Outlet />
-            </main>
-            <footer>
-                <Footer />
-            </footer>
+                <header>
+                    <Header />
+                </header>
+                <main>
+                    <Outlet />
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
         </div>
     )
 

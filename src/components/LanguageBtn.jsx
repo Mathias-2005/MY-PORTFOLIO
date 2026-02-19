@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import frFlag from '../assets/images/france.png';
-import gbFlag from '../assets/images/anglais.png';
+import frFlag from '../assets/images/france.webp';
+import gbFlag from '../assets/images/anglais.webp';
 import '../components/LanguageBtn.scss';
 
 export default function LanguageToggle() {

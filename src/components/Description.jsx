@@ -15,7 +15,7 @@ function Description() {
             <div className='description'>
                 <h2 className='description__title'>{t('Description.title')}</h2>
                 <div className='description__container'>
-                    <p className='description__p'>{data.description}</p>
+                    <p className='description__p'>{t(`Projects.${id}.description`)}</p>
                 </div>
             </div>
         </>

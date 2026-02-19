@@ -15,6 +15,17 @@
     "Cards": {
         "title": "Completed Projects"
     },
+    "Projects": {
+        "1": {
+            "description": "Project – Dynamic JavaScript Web Page. Development of a dynamic front-end application for an interior designer's portfolio, as part of a project simulating a web agency. This project implements: DOM manipulation via JavaScript; user event handling; data retrieval and processing via an API; and HTML/CSS and JavaScript integration. It demonstrates my ability to design interactive interfaces, structure clean front-end code, and adhere to specifications within a professional environment."
+        },
+        "2": {
+            "description": "Kasa Real Estate Rental Web Application. Development of a modern apartment rental web application using React, as part of a web development course. This project simulates the Kasa platform, the leading French peer-to-peer rental platform with over 500 listings daily. Technologies used: React/React Router/SCSS/HTML/CSS. Key achievements: Initialization and configuration of a React application with Create React App, implementation of a fluid navigation system with React Router, development of reusable and optimized React components, creation of CSS animations for a dynamic user experience and a responsive interface adapted to all screen sizes. Result: A functional application with intuitive navigation, a modern design, and maintainable code adhering to React best practices."
+        },
+        "3": {
+            "description": "REST API - My Old Book. Back-end development of a book review website for a chain of bookstores in Old Lille, as part of a web development training course. Creation of a secure RESTful API allowing users to rate and manage literary works. Technologies: Node.js/Express/MongoDB/JavaScript. Main achievements: Design and implementation of a data model compliant with specifications. Development of complete and secure CRUD operations. Implementation of a secure data storage system. Management of user authentication and authorization. Image optimization (WebP format, compression). Adherence to green programming best practices for more sustainable code. Result: Functional, secure, and high-performance API with complete management of books, ratings, and users. Code available on GitHub and fully documented."
+        }
+    },
     "Skills": {
         "title": "Technical Skills and Tools",
         "frontend": "Frontend",

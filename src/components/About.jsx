@@ -62,7 +62,7 @@ function About() {
                     </div>
                 </div>
                 <div className='about__img'>
-                    <img src="../src/assets/images/Mathias.png" alt="Photo de moi :)" />
+                    <img src="../src/assets/images/Mathias.webp" alt="Photo de moi :)" />
                 </div>
             </div>
         </>

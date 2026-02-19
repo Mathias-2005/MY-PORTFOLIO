@@ -15,6 +15,17 @@
     "Cards": {
         "title": "Projets Réalisés"
     },
+    "Projects": {
+        "1": {
+            "description": "Projet – Page web dynamique en JavaScript. Développement d’une application front-end dynamique pour le portfolio d’une architecte d’intérieur, dans un contexte simulant une mission en agence web. \nn Ce projet met en œuvre : La manipulation du DOM en JavaScript. La gestion des événements utilisateurs. La récupération et l’exploitation de données via une API. L’intégration en HTML/CSS et JavaScript. Il démontre ma capacité à concevoir des interfaces interactives, à structurer un code front-end propre et à répondre à un cahier des charges dans un environnement proche du monde professionnel."
+        },
+        "2": {
+            "description": "Application Web de Location Immobilière - Kasa. Développement d'une application web moderne de location d'appartements avec React, dans le cadre d'une formation en développement web. Le projet simule une plateforme pour Kasa. Entreprise leader de la location entre particuliers en France avec plus de 500 annonces quotidiennes. Technologies : React/React Router/Scss/HTML/CSS. Réalisations clés : Initialisation et configuration d'une application React avec Create React App, implémentation d'un système de navigation fluide avec React Router, développement de composants React réutilisables et optimisés, création d'animations CSS pour une expérience utilisateur dynamique, interface responsive adaptée à tous les écrans. Résultat : Application fonctionnelle avec navigation intuitive, design moderne et code maintenable suivant les bonnes pratiques React."
+        },
+        "3": {
+            "description": "API REST - Mon Vieux Grimoire. Développement du back-end d'un site de notation de livres pour une chaîne de librairies du Vieux Lille, dans le cadre d'une formation en développement web. Création d'une API RESTful sécurisée permettant aux utilisateurs de noter et gérer des ouvrages littéraires. Technologies : Node.js/Express/MongoDB/JavaScript. Réalisations clés : Conception et implémentation d'un modèle de données conforme aux spécifications. Développement d'opérations CRUD complètes et sécuriséesMise en place d'un système de stockage sécurisé des donnéesGestion de l'authentification et autorisation des utilisateurs. Optimisation des images (format WebP, compression)Respect des bonnes pratiques Green Code pour un code plus durableRésultat : API fonctionnelle, sécurisée et performante, avec gestion complète des livres, notations et utilisateurs. Code accessible sur GitHub et entièrement documenté."
+        }
+    },
     "Skills": {
         "title": "Compétences Téchniques et Outils",
         "frontend": "Frontend",

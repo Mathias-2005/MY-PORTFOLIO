@@ -7,10 +7,10 @@ function Home() {
 
     return (
         <>
-            <About />
-            <Cards />
-            <Skills />
-            <Contact />
+                <About />
+                <Cards />
+                <Skills />
+                <Contact />
         </>
     )
 }

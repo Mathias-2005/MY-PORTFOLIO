@@ -4,13 +4,13 @@ import ProjectsData from '../data/ProjectsData.json';
 import { useTranslation } from 'react-i18next';
 
 const techLogos = {
-    "HTML": "../src/assets/images/html-css.png",
+    "HTML": "../src/assets/images/html-css.webp",
     "JAVASCRIPT": "../src/assets/images/javascript.webp",
-    "REACT": "../src/assets/images/react.png",
-    "SCSS/SASS": "../src/assets/images/sass.png",
-    "NODEJS": "../src/assets/images/nodejs.png",
-    "API": "../src/assets/images/api.png",
-    "MONGODB": "../src/assets/images/mongodb.png"
+    "REACT": "../src/assets/images/react.webp",
+    "SCSS/SASS": "../src/assets/images/sass.webp",
+    "NODEJS": "../src/assets/images/nodejs.webp",
+    "API": "../src/assets/images/api.webp",
+    "MONGODB": "../src/assets/images/mongodb.webp"
 }
 
 function Stack() {
