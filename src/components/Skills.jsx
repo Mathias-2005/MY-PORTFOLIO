@@ -11,50 +11,50 @@ function Skills() {
                 <h2 className='skills__title'>{t('Skills.title')}</h2>
                 <div className='skills__front-back'>
                     <div className='skills__front-back-container'>
-                        <h4 className='skills__title-tech'>{t('Skills.frontend')}</h4>
+                        <h3 className='skills__title-tech'>{t('Skills.frontend')}</h3>
                         <div className='skills__techs'>
                             <div className='skills__container'>
-                                <img className='skills__logo' src="../src/assets/images/html-css.webp" alt="logo html et css" title='HTML/CSS'/>
+                                <img className='skills__logo' src="/images/html-css.webp" alt="logo html et css" title='HTML/CSS'/>
                             </div>
                             <div className='skills__container'>
-                                <img className='skills__logo' src="../src/assets/images/sass.webp" alt="logo Sass" title='Sass'/>
+                                <img className='skills__logo' src="/images/sass.webp" alt="logo Sass" title='Sass'/>
                             </div>
                             <div className='skills__container'>
-                                <img className='skills__logo' src="../src/assets/images/javascript.webp" alt="logo Javascript" title='Javascript'/>
+                                <img className='skills__logo' src="/images/javascript.webp" alt="logo Javascript" title='Javascript'/>
                             </div>
                             <div className='skills__container'>
-                                <img className='skills__logo' src="../src/assets/images/react.webp" alt="logo React" title='React'/>
+                                <img className='skills__logo' src="/images/react.webp" alt="logo React" title='React'/>
                             </div>
                         </div>
                     </div>
                     <div className='skills__front-back-container'>
-                        <h4 className='skills__title-tech'>{t('Skills.backend')}</h4>
+                        <h3 className='skills__title-tech'>{t('Skills.backend')}</h3>
                         <div className='skills__techs'>
                             <div className='skills__container'>
-                                <img className='skills__logo' src="../src/assets/images/nodejs.webp" alt="logo NodeJS" title='NodeJS'/>
+                                <img className='skills__logo' src="/images/nodejs.webp" alt="logo NodeJS" title='NodeJS'/>
                             </div>
                             <div className='skills__container'>
-                                <img className='skills__logo' src="../src/assets/images/mongodb.webp" alt="logo MongoDB" title='MongoDB' />
+                                <img className='skills__logo' src="/images/mongodb.webp" alt="logo MongoDB" title='MongoDB' />
                             </div>
                             <div className='skills__container'>
-                                <img className='skills__logo' src="../src/assets/images/api.webp" alt="logo API Rest" title='API Rest'/>
+                                <img className='skills__logo' src="/images/api.webp" alt="logo API Rest" title='API Rest'/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='skills__title-tools'>
-                    <h4>{t('Skills.tool')}</h4>
+                    <h3>{t('Skills.tool')}</h3>
                 </div>
                 <div className='skills__tools'>
                     <div className='skills__tool'>
                         <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/git.webp" alt="logo Git" title='Git'/>
+                            <img className='skills__logo' src="/images/git.webp" alt="logo Git" title='Git'/>
                         </div>
                         <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/github.webp" alt="logo GitHub" title='GitHub'/>
+                            <img className='skills__logo' src="/images/github.webp" alt="logo GitHub" title='GitHub'/>
                         </div>
                         <div className='skills__container'>
-                            <img className='skills__logo' src="../src/assets/images/vscode.webp" alt="logo VS Code" title='VS Code'/>
+                            <img className='skills__logo' src="/images/vscode.webp" alt="logo VS Code" title='VS Code'/>
                         </div>
                     </div>
                 </div>

@@ -65,18 +65,21 @@
         &__title {
             display: none;
         }
+
+        &__logo-mathias {
+            display: none;
+        }
+
+        &__link {
+            font-size: 12px;
+        }
     }
 }
 
 // MEDIA QUERIES DE 375 PX
 @media (max-width: $layout-breakpoint-375) {
     .container {
-        padding: 20px 20px;
-
-        img {
-            width: 30px;
-            height: 30px;
-        }
+        padding: 15px 20px;
 
         &__link {
             font-size: 12px;

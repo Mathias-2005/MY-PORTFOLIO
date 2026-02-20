@@ -11,7 +11,7 @@ function Header() {
         <>
             <div className="container">
                 <div className="container__logo">
-                    <img src="../src/assets/images/Mathias.webp" alt="Photo de moi :)"/>
+                    <img src="/images/Mathias.webp" alt="Photo de moi :)" className='container__logo-mathias'/>
                     <h2 className='container__title'>{t('Header.title')}</h2>
                 </div>
                 <div className="container__links">
@@ -22,7 +22,6 @@ function Header() {
                     <LanguageToggle />
                 </div>
             </div>
-            <div className="container__line"></div>
         </>
     )
 }
