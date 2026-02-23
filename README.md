@@ -1,16 +1,54 @@
-# React + Vite
+# Portfolio - Développeur Web Junior
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Mathias Mailly de pinho
 
-Currently, two official plugins are available:
+Bienvenue sur mon portfolio ! Je suis un développeur web junior diplômé (BAC+2) avec une solide formation en développement full-stack, spécialisé dans la stack MERN (MongoDB, Express, React, Node.js).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👨‍💻 À Propos de Moi
 
-## React Compiler
+Passionné par la création d'applications web modernes et responsives, je me suis formé chez OpenClassrooms en maîtrisant les technologies et bonnes pratiques essentielles du développement web. Je suis motivé par l'apprentissage continu et l'intégration des derniers standards du secteur.
+**Formation** : OpenClassrooms - Développeur Web (Diplôme BAC+2)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎓 Recherche d'Alternance
 
-## Expanding the ESLint configuration
+Je suis actuellement admis à l'ESGI et je recherche activement une alternance pour septembre 2026.
+Je suis à la recherche d'une entreprise dynamique où je pourrai mettre en pratique mes compétences, contribuer à des projets réels et continuer ma progression en tant que développeur web full-stack.
+Si votre entreprise recrute, n'hésitez pas à me contacter !
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Compétences Techniques
+
+**Frontend**
+
+1. **HTML5 & CSS3** : Semantic web, responsive design, accessibilité
+2. **SCSS/SASS** : Variables, mixins, organisation modulaire
+3. **JavaScript** : DOM manipulation, asynchrone, programmation orientée objet
+4. **React** : Composants fonctionnels, Hooks (useState, useEffect, useContext), gestion d'état, routage
+
+**Backend**
+
+1. **Node.js** : Serveurs HTTP, middlewares, gestion asynchrone
+2. **Express** : Architecture REST, routes, controllers, middlewares personnalisés
+3. **MongoDB** : Design de schémas, requêtes CRUD, agrégation
+
+**Outils & Environnement**
+
+**Git & GitHub** : Versioning, collaboration, workflow branching
+**npm/yarn** : Gestion de dépendances
+**RESTful API Design** : Conventions HTTP, gestion d'erreurs
+
+## 📞 Me Contacter
+
+**Email** : mathiasmaillydepinho@gmail.com
+**GitHub** : Mathias-2005
+**Portfolio Web** : (url)
+**LinkedIn** : (url)
+
+## 🤝 Contribution & Feedback
+
+Ce portfolio est ouvert aux améliorations ! Si vous avez des suggestions ou trouvez des bugs, n'hésitez pas à :
+
+1. Ouvrir une issue pour signaler un problème
+2. Proposer une pull request pour des améliorations
+3. Me contacter directement pour du feedback
+
+**Dernière mise à jour**: Février 2026

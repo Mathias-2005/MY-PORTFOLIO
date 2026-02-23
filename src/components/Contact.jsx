@@ -22,8 +22,8 @@ function Contact() {
                 <div className='contact__container'>
                     <div className='contact__info'>
                         <div className='contact__name'>
-                            <p>{t('Contact.name')}</p>
                             <label htmlFor="name">
+                                <p>{t('Contact.name')}</p>
                                 <textarea
                                     id='name'
                                     placeholder={t('Contact.placeholder-name')}
@@ -31,8 +31,9 @@ function Contact() {
                             </label>
                         </div>
                         <div className='contact__email'>
-                            <p>{t('Contact.email')}</p>
+
                             <label htmlFor="email">
+                                <p>{t('Contact.email')}</p>
                                 <textarea
                                     type="email"
                                     id='email'
@@ -42,8 +43,8 @@ function Contact() {
                         </div>
                     </div>
                     <div>
-                        <p>{t('Contact.message')}</p>
                         <label htmlFor="message">
+                            <p>{t('Contact.message')}</p>
                             <textarea
                                 value={formData.message}
                                 onChange={(e) => {
