@@ -39,8 +39,11 @@ Si votre entreprise recrute, n'hésitez pas à me contacter !
 ## 📞 Me Contacter
 
 **Email** : mathiasmaillydepinho@gmail.com
+
 **GitHub** : Mathias-2005
+
 **Portfolio Web** : (url)
+
 **LinkedIn** : (url)
 
 ## 🤝 Contribution & Feedback
