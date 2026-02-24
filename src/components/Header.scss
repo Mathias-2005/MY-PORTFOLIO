@@ -10,14 +10,15 @@
     right: 0;
     z-index: 1000;
     padding: 0px 300px;
-    background-color: #F4FAFF;
+    background-color: var(--bg-color-header-footer);
     font-family: $font-family-header;
+    transition: color 0.1s ease 0.1s, background-color 0.1s ease 0.1s;
 
     &__logo {
         display: flex;
         align-items: center;
         gap: 20px;
-        color: $title-color-white;
+        color: var(--text-title-color);
     }
     
     img {
@@ -33,7 +34,7 @@
     }
 
     &__link {
-        color: $text-color-white;
+        color: var(--text-color);
         cursor: pointer;
         text-decoration: none;
     }
@@ -60,18 +61,10 @@
 // MEDIA QUERIES DE 768 PX
 @media (max-width: $layout-breakpoint-768) {
     .container {
-        padding: 15px 40px;
-
-        &__title {
-            display: none;
-        }
-
-        &__logo-mathias {
-            display: none;
-        }
+        padding: 0px 40px;
 
         &__link {
-            font-size: 12px;
+            display: none;
         }
     }
 }
@@ -79,10 +72,6 @@
 // MEDIA QUERIES DE 375 PX
 @media (max-width: $layout-breakpoint-375) {
     .container {
-        padding: 15px 20px;
-
-        &__link {
-            font-size: 12px;
-        }
+        padding: 0px 20px;
     }
 }

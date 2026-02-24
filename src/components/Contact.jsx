@@ -31,7 +31,6 @@ function Contact() {
                             </label>
                         </div>
                         <div className='contact__email'>
-
                             <label htmlFor="email">
                                 <p>{t('Contact.email')}</p>
                                 <textarea

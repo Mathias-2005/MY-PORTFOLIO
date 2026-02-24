@@ -6,19 +6,22 @@
     align-items: center;
     margin: 150px 0px 20px 0px;
     font-family: $font-family-;
+    color: var(--text-color);
+    transition: color 0.1s ease 0.1s, background-color 0.1s ease 0.1s;
 
     &__404 {
-        color: $title-color-white;
+        color: var(--text-title-color);
         font-size: 288px;
         margin: 0;
     }
 
-    &__p {
-        color: $text-color-white;
+    &__link {
+        text-decoration: none;
+        color: var(--text-color);
     }
 
-    &__a {
-        color: $text-color-white;
+    &__link:hover {
+        text-decoration: underline;
     }
 }
 
@@ -37,6 +40,7 @@
 
         &__a {
             font-size: 12px;
+            margin-bottom: 150px;
         }
     }
 }

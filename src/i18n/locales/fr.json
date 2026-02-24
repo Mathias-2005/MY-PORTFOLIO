@@ -53,6 +53,10 @@
         "placeholder-message": "Votre message...",
         "send": "Envoyer"
     },
+    "Error": {
+        "p": "Oups! La page que vous demandez n'existe pas..",
+        "a": "Retourner sur la page d'accueil"
+    },
     "Footer": {
         "copyright": "© 2026 Mailly de pinho Mathias. Tous droits réservés.",
         "github": "GitHub",

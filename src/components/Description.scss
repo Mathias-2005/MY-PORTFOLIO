@@ -6,21 +6,20 @@
     align-items: center;
     font-family: $font-family-;
     @include margin-desktop;
+    color: var(--text-color);
+    transition: color 0.1s ease 0.1s, background-color 0.1s ease 0.1s;
 
     &__title {
-        color: $title-color-white;
+        color: var(--text-title-color);
         margin: 100px 0px;
     }
 
     &__container {
-        background-color: $background-color-cards-white;
+        background-color: var(--bg-color-cards);
         padding: 25px;
         border-radius: 10px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    }
-
-    &__p {
-        color: $text-color-white;
+        transition: color 0.1s ease 0.1s, background-color 0.1s ease 0.1s;
     }
 }
 

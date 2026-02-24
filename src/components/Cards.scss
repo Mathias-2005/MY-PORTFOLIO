@@ -5,11 +5,13 @@
     flex-direction: column;
     font-family: $font-family-;
     @include margin-desktop;
+    background-color: var(--bg-color);
+    transition: color 0.1s ease 0.1s, background-color 0.1s ease 0.1s;
 
     &__title {
         display: flex;
         justify-content: center;
-        color: $title-color-white;
+        color: var(--text-title-color);
         margin: 100px 0px; 
     }
 
@@ -22,11 +24,13 @@
         width: 25%;
         padding: 25px;
         height: 250px;
-        background-color: $background-color-cards-white;
+        background-color: var(--bg-color-cards);
         border-radius: 10px;
         cursor: pointer;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         transition: box-shadow 0.3s ease;
+        text-decoration: none;
+        transition: color 0.1s ease 0.1s, background-color 0.1s ease 0.1s;
     }
 
     &__card:hover {
@@ -42,7 +46,7 @@
     }
 
     &__name {
-        color: $text-color-white;
+        color: var(--text-color);
         display: flex;
         justify-content: center;
     }

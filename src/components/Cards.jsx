@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../components/Projects.scss';
+import '../components/Cards.scss';
 import ProjectsData from '../data/ProjectsData.json';
 import { useTranslation } from 'react-i18next';
 

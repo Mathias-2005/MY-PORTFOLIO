@@ -45,7 +45,7 @@ function About() {
                                 </button>
                                 <button 
                                 className='about__btn-link' 
-                                onClick={() => window.open ("https://www.linkedin.com/in/mathias-mailly-de-pinho-9614a73b2/?originalSubdomain=fr", "_blank")}
+                                onClick={() => window.open ("https://www.linkedin.com/in/mathias-mailly-de-pinho-4b7b303b0/", "_blank")}
                                 aria-label="Visiter mon profil LinkedIn"
                                 >
                                     <svg width="16px" height="16px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
