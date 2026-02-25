@@ -13,10 +13,10 @@ function PreviewLink() {
     return (
         <>
             <div className='preview'>
-                <h2 className='preview__title'>{data.title}</h2>
+                <h1 className='preview__title'>{data.title}</h1>
                 <div className='preview__img'>
                     <a href={data.demo} target='_blank'>
-                        <img src={data.picture} alt="Image de mon projet" />
+                        <img src={data.preview} alt="Image de mon projet" />
                     </a>
                 </div>
                 <h2 className='preview__title'>{t('PreviewLink.title')}</h2>

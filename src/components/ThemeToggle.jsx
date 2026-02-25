@@ -9,6 +9,7 @@ function ThemeToggle({ theme, toggleTheme }) {
                 <button
                     onClick={toggleTheme}
                     className={theme === "light" ? "light" : "dark"}
+                    aria-label="Theme Mode"
                     >
                     {theme === "light" ? (<Sun />) : <Moon />}
                 </button>

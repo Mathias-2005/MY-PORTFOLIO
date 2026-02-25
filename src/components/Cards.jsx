@@ -17,7 +17,7 @@ function Cards() {
                 <div className='projects__cards'>
                     {projects.map((e) => (
                         <Link to={`/project/${e.id}`} key={e.id} className='projects__card'>
-                            <img src={e.picture} alt="Photo de mes projets" />
+                            <img src={e.picture} alt="Photo de mes projets" title={e.title} />
                             <div className='projects__overlay'>
                                 <p className='projects__name'>{e.title}</p>
                             </div>

@@ -10,7 +10,8 @@
             ],
             "github": "https://github.com/Mathias-2005/P3-OPENCLASSROOMS-SOPHIE-BLUEL",
             "demo": "https://mathias-2005.github.io/P3-OPENCLASSROOMS-SOPHIE-BLUEL/",
-            "picture": "/images/Screenshot_Sophie.webp"
+            "picture": "/images/Screenshot_Sophie.webp",
+            "preview": "/images/Screenshot_sophie_preview.png"
         },
 
         {
@@ -24,7 +25,8 @@
             ],
             "github": "https://github.com/Mathias-2005/P5-Kasa",
             "demo": "https://mathias-2005.github.io/P5-Kasa/",
-            "picture": "/images/Screenshot_Kasa.webp"
+            "picture": "/images/Screenshot_Kasa.webp",
+            "preview": "/images/Screenshot_kasa_preview.png"
         },
 
         {
@@ -38,7 +40,8 @@
             ],
             "github": "https://github.com/Mathias-2005/P6-OPENCLASSROOMS-BACKEND",
             "demo": "https://votre-demo.netlify.app",
-            "picture": "/images/Screenshot_Monvieuxgrimoire.webp"
+            "picture": "/images/Screenshot_Monvieuxgrimoire.webp",
+            "preview": "/images/Screenshot_grimoire_preview.png"
         }
     ]
 }
