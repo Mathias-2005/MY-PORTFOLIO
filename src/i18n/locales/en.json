@@ -51,13 +51,19 @@
         "placeholder-name": "Your name",
         "placeholder-email": "your@email.com",
         "placeholder-message": "Your message...",
-        "send": "Send"
+        "send": "Send",
+        "sending": "Sending...",
+        "success-message": "Your message has been sent successfully! ✅",
+        "error-empty-fields": "Please fill in all fields ❌",
+        "error-invalid-email": "Invalid email ❌",
+        "error-send": "Error sending your message ❌",
+        "error-server": "Server connection error ❌"
     },
     "Error": {
         "p": "Oops! The page you requested does not exist.",
         "a": "Return to the homepage"
     },
-  "Footer": {
+    "Footer": {
         "copyright": "© 2026 Mailly de pinho Mathias. All rights reserved.",
         "github": "GitHub",
         "linkedin": "LinkedIn",

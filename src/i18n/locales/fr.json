@@ -51,7 +51,13 @@
         "placeholder-name": "Votre nom",
         "placeholder-email": "votre@email.com",
         "placeholder-message": "Votre message...",
-        "send": "Envoyer"
+        "send": "Envoyer",
+        "sending": "Envoi...",
+        "success-message": "Votre message a été envoyé avec succès ! ✅",
+        "error-empty-fields": "Veuillez remplir tous les champs ❌",
+        "error-invalid-email": "Email invalide ❌",
+        "error-send": "Erreur lors de l'envoi du message ❌",
+        "error-server": "Erreur de connexion au serveur ❌"
     },
     "Error": {
         "p": "Oups! La page que vous demandez n'existe pas..",

@@ -23,6 +23,7 @@
     }
 
     &__info {
+        width: calc(100% - 5px);
         display: inline-flex;
         justify-content: space-between;
         margin-bottom: 20px;
@@ -57,8 +58,14 @@
         background: var(--bg-color);
     }
 
-    &__input::placeholder{
+    &__input::placeholder {
         color: #a8a29e;
+    }
+
+    &__input:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        background-color: var(--bg-color);
     }
 
     &__input-message {
@@ -82,8 +89,14 @@
         background: var(--bg-color);
     }
 
-    &__input-message::placeholder{
+    &__input-message::placeholder {
         color: #a8a29e;
+    }
+
+    &__input-message:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        background-color: var(--bg-color);
     }
 
     &__btn {
@@ -108,12 +121,6 @@
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 
-    &__chars {
-        display: flex;
-        justify-content: end;
-        margin: 10px 0px 10px 0px;
-    }
-
     &__submit::before {
         content: '';
         position: absolute;
@@ -136,12 +143,69 @@
     &__submit:hover {
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
+
+    &__submit:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transition: all 0.3s ease;
+    }
+
+    &__submit:disabled:hover::before {
+        width: 0;
+        height: 0;
+    }
+
+    &__chars {
+        display: flex;
+        justify-content: end;
+        margin: 10px 0px 10px 0px;
+    }
+
+    /* Feedback messages styles */
+    &__feedback {
+        padding: 15px 15px;
+        margin: 20px 0px 20px 0px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: $font-family-;
+        font-weight: 500;
+        animation: slideIn 0.3s ease-in-out;
+        border-left: 4px solid;
+        transition: all 0.3s ease;
+
+        &--success {
+            background-color: rgba(76, 175, 80, 0.1);
+            color: #2e7d32;
+            border-left-color: #4caf50;
+        }
+
+        &--error {
+            background-color: rgba(244, 67, 54, 0.1);
+            color: #c62828;
+            border-left-color: #f44336;
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 }
 
 // MEDIA QUERIES DE 1440 PX
 @media (max-width: $layout-breakpoint-1440) {
     .contact {
         @include margin-1440;
+
+        &__feedback {
+            font-size: 14px;
+        }
     }
 }
 
@@ -172,6 +236,20 @@
         &__container {
             padding: 30px;
         }
+
+        &__input {
+            font-size: 14px;
+        }
+
+        &__input-message {
+            font-size: 14px;
+        }
+
+        &__feedback {
+            padding: 12px 12px;
+            margin: 15px 0px 15px 0px;
+            font-size: 14px;
+        }
     }
 }
 
@@ -182,6 +260,20 @@
 
         &__container {
             padding: 20px;
+        }
+
+        &__input {
+            font-size: 12px;
+            line-height: 2;
+        }
+        
+        &__input-message {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        &__feedback {
+            font-size: 12px;
         }
     }
 }
