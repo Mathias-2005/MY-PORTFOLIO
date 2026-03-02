@@ -112,9 +112,4 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Démarrer le serveur
-app.listen(PORT, () => {
-  console.log(`🚀 Serveur en écoute sur http://localhost:${PORT}`);
-});
-
 export default app;
