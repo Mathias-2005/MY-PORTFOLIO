@@ -1,5 +1,5 @@
-import express from 'express'; // PACKAGE GERE LE SERVEUR / ROUTES
-import mongoose from 'mongoose'; // PACKAGE MONGOOSE POUR LA STRUCTURATION DE DONNES ET VALIDATION
+import express from 'express';
+import mongoose from 'mongoose';
 import { sendContactEmail } from './emailService.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -15,14 +15,13 @@ mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/portfolio',
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// CORS - SIMPLE ET EFFICACE
+// CORS
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*'); 
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
   res.header('Access-Control-Allow-Credentials', 'true');
   
-  // Gérer les requêtes OPTIONS
   if (req.method === 'OPTIONS') {
     return res.sendStatus(200);
   }
@@ -33,12 +32,12 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ROUTES API
+// ROUTES API 
+
 app.post('/api/contact', async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
-    // Validation des champs
     if (!name || !email || !message) {
       return res.status(400).json({
         success: false,
@@ -46,7 +45,6 @@ app.post('/api/contact', async (req, res) => {
       });
     }
 
-    // Validation basique de l'email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return res.status(400).json({
@@ -55,7 +53,6 @@ app.post('/api/contact', async (req, res) => {
       });
     }
 
-    // Envoyer l'email
     const result = await sendContactEmail(name, email, message);
 
     if (result.success) {
@@ -78,8 +75,8 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-// ROUTE PAR DÉFAUT
-app.get('/', (req, res) => {
+// Route API pour vérifier le serveur
+app.get('/api/status', (req, res) => {
   res.json({ 
     message: 'Bienvenue sur Portfolio API',
     version: '1.0.0',
@@ -87,24 +84,16 @@ app.get('/', (req, res) => {
   });
 });
 
-// ROUTE 404
-app.use((req, res) => {
-  res.status(404).json({ 
-    error: 'Route non trouvée',
-    path: req.path,
-    method: req.method
-  });
-});
-
-// Servir les fichiers statiques du frontend construit
+// Servir les fichiers statiques du frontend
 app.use(express.static(path.join(__dirname, '../dist')));
 
-// Fallback pour SPA - rediriger vers index.html
+// Fallback pour SPA - rediriger tout vers index.html
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
-// Gestion des erreurs
+// GESTION DES ERREURS 
+
 app.use((err, req, res, next) => {
   console.error('Erreur:', err);
   res.status(err.status || 500).json({ 
