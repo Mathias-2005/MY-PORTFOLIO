@@ -153,7 +153,6 @@ function Contact() {
                             </label>
                             <span className='contact__chars'>{formData.message.length} / {MaxChars}</span>
                         </div>
-
                         {/* Message de feedback (succès/erreur) */}
                         {feedback.message && (
                             <div className={`contact__feedback contact__feedback--${feedback.type}`}>

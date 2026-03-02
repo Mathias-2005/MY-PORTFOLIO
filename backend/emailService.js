@@ -1,29 +1,23 @@
-import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+dotenv.config();  // ← Ajoutez cette ligne !
+import sgMail from '@sendgrid/mail';
 
-// ✅ SOLUTION: Variables codées directement (pas de .env)
-const GMAIL_USER = 'mathiasmaillydepinho@gmail.com';
-const GMAIL_PASSWORD = 'mnvlnjmgvyptwfcn';
-const CONTACT_EMAIL = 'mathiasmaillydepinho@gmail.com';
+// Configurer SendGrid avec la clé API
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-// Configurer le transporteur Nodemailer pour Gmail
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: GMAIL_USER,
-    pass: GMAIL_PASSWORD
-  }
-});
+const CONTACT_EMAIL = process.env.EMAIL_TO || 'mathiasmaillydepinho@gmail.com';
+const FROM_EMAIL = process.env.EMAIL_FROM || 'mathiasmaillydepinho@gmail.com';
 
 export async function sendContactEmail(name, senderEmail, message) {
   try {
-    console.log(`\n📧 Tentative d'envoi d'email...`);
-    console.log(`   De: ${GMAIL_USER}`);
+    console.log(`\n📧 Tentative d'envoi d'email via SendGrid...`);
+    console.log(`   De: ${FROM_EMAIL}`);
     console.log(`   À: ${CONTACT_EMAIL}`);
     console.log(`   Expéditeur: ${senderEmail}`);
 
-    const mailOptions = {
-      from: GMAIL_USER,
+    const msg = {
       to: CONTACT_EMAIL,
+      from: FROM_EMAIL,
       subject: `Nouveau message de contact de ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -47,20 +41,25 @@ export async function sendContactEmail(name, senderEmail, message) {
       replyTo: senderEmail
     };
 
-    const info = await transporter.sendMail(mailOptions);
+    const response = await sgMail.send(msg);
     
     console.log('✅ Email envoyé avec succès!');
-    console.log('   Response:', info.response);
-    return { success: true, messageId: info.messageId };
+    console.log('   Status:', response[0].statusCode);
+    return { success: true, messageId: response[0].headers['x-message-id'] };
 
   } catch (error) {
-    console.error('❌ Erreur lors de l\'envoi de l\'email:');
+    console.error('❌ Erreur lors de l\'envoi de l\'email via SendGrid:');
     console.error('   Code:', error.code);
     console.error('   Message:', error.message);
     
-    if (error.code === 'EAUTH') {
-      console.error('   → Problème d\'authentification Gmail');
-      console.error('   → Vérifiez que le mot de passe est correct');
+    if (error.code === 401) {
+      console.error('   → Clé API SendGrid invalide ou manquante');
+      console.error('   → Vérifiez SENDGRID_API_KEY dans .env');
+    }
+    
+    if (error.code === 403) {
+      console.error('   → Email "from" non autorisé');
+      console.error('   → Vérifiez EMAIL_FROM dans .env');
     }
     
     return { success: false, error: error.message };
