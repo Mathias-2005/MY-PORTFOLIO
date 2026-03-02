@@ -1,6 +1,11 @@
 import express from 'express'; // PACKAGE GERE LE SERVEUR / ROUTES
 import mongoose from 'mongoose'; // PACKAGE MONGOOSE POUR LA STRUCTURATION DE DONNES ET VALIDATION
 import { sendContactEmail } from './emailService.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 mongoose.connect('mongodb+srv://Mathias:Mathias2103@cluster1.lkm2zqy.mongodb.net/?appName=Cluster1',
   { serverApi: { version: '1', strict: true, deprecationErrors: true } })
@@ -15,6 +20,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*'); 
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
+  res.header('Access-Control-Allow-Credentials', 'true');
   
   // Gérer les requêtes OPTIONS
   if (req.method === 'OPTIONS') {
@@ -88,6 +94,14 @@ app.use((req, res) => {
     path: req.path,
     method: req.method
   });
+});
+
+// Servir les fichiers statiques du frontend construit
+app.use(express.static(path.join(__dirname, '../dist')));
+
+// Fallback pour SPA - rediriger vers index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 // Gestion des erreurs
