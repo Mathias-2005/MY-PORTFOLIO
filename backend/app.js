@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-mongoose.connect('mongodb+srv://Mathias:Mathias2103@cluster1.lkm2zqy.mongodb.net/?appName=Cluster1',
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/portfolio',
   { serverApi: { version: '1', strict: true, deprecationErrors: true } })
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
