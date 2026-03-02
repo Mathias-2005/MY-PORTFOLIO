@@ -161,7 +161,6 @@
         margin: 10px 0px 10px 0px;
     }
 
-    /* Feedback messages styles */
     &__feedback {
         padding: 15px 15px;
         margin: 20px 0px 20px 0px;
@@ -204,7 +203,7 @@
         @include margin-1440;
 
         &__feedback {
-            font-size: 14px;
+            font-size: $font-size-p-mid;
         }
     }
 }
@@ -213,6 +212,10 @@
 @media (max-width: $layout-breakpoint-1024) {
     .contact {
         @include margin-1024;
+
+        &__title {
+            font-size: $font-size-title-mid;
+        }
 
         &__info {
             flex-direction: column;
@@ -237,18 +240,24 @@
             padding: 30px;
         }
 
+        &__subtitle {
+            font-size: $font-size-p-mid;
+        }
+
         &__input {
-            font-size: 14px;
+            font-size: $font-size-p-small;
+            line-height: 2;
         }
 
         &__input-message {
-            font-size: 14px;
+            font-size: $font-size-p-small;
+            line-height: 1.5;
         }
 
         &__feedback {
             padding: 12px 12px;
             margin: 15px 0px 15px 0px;
-            font-size: 14px;
+            font-size: $font-size-p-small;
         }
     }
 }
@@ -262,18 +271,30 @@
             padding: 20px;
         }
 
+        &__title {
+            font-size: $font-size-title-small;
+        }
+
+        &__subtitle {
+            font-size: $font-size-p-small;
+        }
+
         &__input {
-            font-size: 12px;
-            line-height: 2;
+            font-size: $font-size-p-very-small;
+            line-height: 2.5;
         }
         
         &__input-message {
-            font-size: 12px;
-            line-height: 1.5;
+            font-size: $font-size-p-very-small;
+            line-height: 1;
+        }
+
+        &__submit {
+            font-size: $font-size-p-small;
         }
 
         &__feedback {
-            font-size: 12px;
+            font-size: $font-size-p-very-small;
         }
     }
 }

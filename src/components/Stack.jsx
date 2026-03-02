@@ -30,7 +30,7 @@ function Stack() {
                             {techLogos[tech] ? (
                                 <img
                                     src={techLogos[tech]}
-                                    alt={tech}
+                                    alt={`Logo de ${tech}`}
                                     title={tech}
                                     className='stack__logo'
                                 />

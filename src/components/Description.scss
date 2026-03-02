@@ -34,6 +34,10 @@
 @media (max-width: $layout-breakpoint-1024) {
     .description {
         @include margin-1024;
+
+        &__title {
+            font-size: $font-size-title-mid;
+        }
     }
 }
 
@@ -43,7 +47,7 @@
         @include margin-768;
 
         &__container {
-            padding: 15px;
+            padding: 20px;
         }
     }
 }
@@ -54,12 +58,16 @@
     .description {
         @include margin-375;
 
+        &__title {
+            font-size: $font-size-title-small;
+        }
+
         &__container {
-            padding: 10px;
+            padding: 15px;
         }
 
         &__p {
-            font-size: 14px;
+            font-size: $font-size-p-mid;
         }
     }
 

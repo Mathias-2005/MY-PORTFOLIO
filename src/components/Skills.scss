@@ -103,6 +103,14 @@
     .skills {
         @include margin-1024;
 
+        &__title {
+            font-size: $font-size-title-mid;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
         &__container {
             padding: 8px;
         }
@@ -158,6 +166,14 @@
 
     .skills {
         @include margin-375;
+
+        &__title {
+            font-size: $font-size-title-small;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
     }
 
 }

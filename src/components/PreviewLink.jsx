@@ -19,7 +19,7 @@ function PreviewLink() {
                         <img src={data.preview} alt="Image de mon projet" />
                     </a>
                 </div>
-                <h2 className='preview__title'>{t('PreviewLink.title')}</h2>
+                <h2 className='preview__subtitle'>{t('PreviewLink.title')}</h2>
                 <div className='preview__links'>
                     <a className='preview__link' target='_blank' href={data.github}>
                         <button className='preview__link-btn'>

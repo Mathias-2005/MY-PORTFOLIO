@@ -9,7 +9,7 @@ function Error() {
     return (
         <>
             <div className="error">
-                <p className="error__404">404</p>
+                <h1 className="error__404">404</h1>
                 <p className="error__p">{t("Error.p")}</p>
                 <Link to={"/"} className="error__link">
                     <p className="error__a">{t("Error.a")}</p>

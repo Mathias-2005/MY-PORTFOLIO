@@ -8,6 +8,14 @@ $btn-border-color-white: #8EC8F6;
 // FONT FAMILY
 $font-family-header: 'Crimson Text', serif;
 $font-family-: 'Inter', sans-serif;
+// FONT SIZE
+$font-size-big-title-mid: 26px;
+$font-size-big-title-small: 24px;
+$font-size-title-mid: 22px;
+$font-size-title-small: 18px;
+$font-size-p-mid: 14px;
+$font-size-p-small: 12px;
+$font-size-p-very-small: 10px;
 // MARGE
 @mixin margin-desktop {
     margin: 50px 300px;

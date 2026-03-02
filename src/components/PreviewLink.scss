@@ -29,6 +29,13 @@
         filter: blur(0);
     }
 
+    &__subtitle {
+        display: flex;
+        justify-content: center;
+        margin: 100px 0px;
+        color: var(--text-title-color);
+    }
+
     &__links {
         display: flex;
         justify-content: space-around;
@@ -84,6 +91,14 @@
 @media (max-width: $layout-breakpoint-1024) {
     .preview {
         @include margin-1024;
+
+        &__title {
+            font-size: $font-size-big-title-mid;
+        }
+
+        &__subtitle {
+            font-size: $font-size-title-mid;
+        }
     }
 }
 
@@ -91,6 +106,10 @@
 @media (max-width: $layout-breakpoint-768) {
     .preview {
         @include margin-768;
+
+        &__title {
+            font-size: $font-size-big-title-small;
+        }
 
         &__links {
             flex-direction: column;
@@ -105,6 +124,10 @@
 
     .preview {
         @include margin-375;
+
+        &__subtitle {
+            font-size: $font-size-title-small;
+        }
 
         &__links {
             flex-direction: column;

@@ -30,10 +30,10 @@
 @media (max-width: $layout-breakpoint-768) {
     .footer {
         padding: 25px;
-        font-size: 14px;
+        font-size: $font-size-p-mid;
 
         &__links {
-            font-size: 12px;
+            font-size: $font-size-p-small;
         }
     }
 }
@@ -42,13 +42,13 @@
 @media (max-width: $layout-breakpoint-375) {
     .footer {
         padding: 10px;
-        font-size: 12px;
+        font-size: $font-size-p-small;
 
         &__links {
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 10px;
+            font-size: $font-size-p-very-small;
         }
     }
 }

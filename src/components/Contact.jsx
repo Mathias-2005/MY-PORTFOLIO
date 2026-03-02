@@ -112,7 +112,7 @@ function Contact() {
                         <div className='contact__info'>
                             <div className='contact__name'>
                                 <label htmlFor="name">
-                                    <p>{t('Contact.name')}</p>
+                                    <p className='contact__subtitle'>{t('Contact.name')}</p>
                                     <textarea
                                         id='name'
                                         value={formData.name}
@@ -125,7 +125,7 @@ function Contact() {
                             </div>
                             <div className='contact__email'>
                                 <label htmlFor="email">
-                                    <p>{t('Contact.email')}</p>
+                                    <p className='contact__subtitle'>{t('Contact.email')}</p>
                                     <textarea
                                         id='email'
                                         type="email"
@@ -140,7 +140,7 @@ function Contact() {
                         </div>
                         <div>
                             <label htmlFor="message">
-                                <p>{t('Contact.message')}</p>
+                                <p className='contact__subtitle'>{t('Contact.message')}</p>
                                 <textarea
                                     id='message'
                                     value={formData.message}

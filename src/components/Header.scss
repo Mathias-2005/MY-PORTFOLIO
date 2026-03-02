@@ -66,6 +66,11 @@
 @media (max-width: $layout-breakpoint-1024) {
     .container {
         padding: 0px 100px;
+
+        &__link-a {
+            font-size: $font-size-p-mid;
+        }
+
     }
 }
 
@@ -84,7 +89,7 @@
         }
 
         &__logo {
-            font-size: 12px;
+            font-size: $font-size-p-small;
         }
     }
 }
