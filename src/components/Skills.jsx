@@ -1,9 +1,34 @@
 import '../components/Skills.scss';
 import { useTranslation } from 'react-i18next';
+import ProjectsData from '../data/ProjectsData.json';
 
 function Skills() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation(); // TRADUCTION MESSAGE
+
+    const data = ProjectsData.Stack[0]; // VARIABLE DATA STACK SOUS FORME DE TABLEAU
+
+    // VARIABLE QUI CONTIENT FRONT
+    const techsfront = {
+        "HTML": "/images/html-css.webp",
+        "JAVASCRIPT": "/images/javascript.webp",
+        "REACT": "/images/react.webp",
+        "SCSS/SASS": "/images/sass.webp",
+    }
+
+    // VARIABLE QUI CONTIENT BACK
+    const techsback = {
+        "NODEJS": "/images/nodejs.webp",
+        "API": "/images/api.webp",
+        "MONGODB": "/images/mongodb.webp"
+    }
+
+    // VARIABLE QUI CONTIENT TOOLS
+    const techstools = {
+        "GIT": "/images/git.webp",
+        "GITHUB": "/images/github.webp",
+        "VSCODE": "/images/vscode.webp"
+    }
 
     return (
         <>
@@ -13,32 +38,39 @@ function Skills() {
                     <div className='skills__front-back-container'>
                         <h3 className='skills__title-tech'>{t('Skills.frontend')}</h3>
                         <div className='skills__techs'>
-                            <div className='skills__container'>
-                                <img className='skills__logo' src="/images/html-css.webp" alt="logo html et css" title='HTML/CSS'/>
-                            </div>
-                            <div className='skills__container'>
-                                <img className='skills__logo' src="/images/sass.webp" alt="logo Sass" title='Sass'/>
-                            </div>
-                            <div className='skills__container'>
-                                <img className='skills__logo' src="/images/javascript.webp" alt="logo Javascript" title='Javascript'/>
-                            </div>
-                            <div className='skills__container'>
-                                <img className='skills__logo' src="/images/react.webp" alt="logo React" title='React'/>
-                            </div>
+                            {data.frontend.map((tech) => (
+                                <div key={tech} className='skills__container'>
+                                    {techsfront[tech] ? (
+                                        <img
+                                            src={techsfront[tech]}
+                                            alt={`Logo de ${tech}`}
+                                            title={tech}
+                                            className='skills__logo'
+                                        />
+                                    ) : (
+                                        <span>{tech}</span>
+                                    )}
+                                </div>
+                            ))}
                         </div>
                     </div>
                     <div className='skills__front-back-container'>
                         <h3 className='skills__title-tech'>{t('Skills.backend')}</h3>
                         <div className='skills__techs'>
-                            <div className='skills__container'>
-                                <img className='skills__logo' src="/images/nodejs.webp" alt="logo NodeJS" title='NodeJS'/>
-                            </div>
-                            <div className='skills__container'>
-                                <img className='skills__logo' src="/images/mongodb.webp" alt="logo MongoDB" title='MongoDB' />
-                            </div>
-                            <div className='skills__container'>
-                                <img className='skills__logo' src="/images/api.webp" alt="logo API Rest" title='API Rest'/>
-                            </div>
+                            {data.backend.map((tech) => (
+                                <div key={tech} className='skills__container'>
+                                    {techsback[tech] ? (
+                                        <img
+                                            src={techsback[tech]}
+                                            alt={`Logo de ${tech}`}
+                                            title={tech}
+                                            className='skills__logo'
+                                        />
+                                    ) : (
+                                        <span>{tech}</span>
+                                    )}
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -47,15 +79,20 @@ function Skills() {
                 </div>
                 <div className='skills__tools'>
                     <div className='skills__tool'>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="/images/git.webp" alt="logo Git" title='Git'/>
-                        </div>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="/images/github.webp" alt="logo GitHub" title='GitHub'/>
-                        </div>
-                        <div className='skills__container'>
-                            <img className='skills__logo' src="/images/vscode.webp" alt="logo VS Code" title='VS Code'/>
-                        </div>
+                        {data.tools.map((tech) => (
+                            <div key={tech} className='skills__container'>
+                                {techstools[tech] ? (
+                                    <img
+                                        src={techstools[tech]}
+                                        alt={`Logo de ${tech}`}
+                                        title={tech}
+                                        className='skills__logo'
+                                    />
+                                ) : (
+                                    <span>{tech}</span>
+                                )}
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

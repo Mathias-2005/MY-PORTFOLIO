@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 
 function PreviewLink() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation(); // TRADUCTION MESSAGE
 
-    const { id } = useParams();
-    const data = ProjectsData.Projects.find(item => item.id === id);
+    const { id } = useParams(); //ID EN PARAMETTRE URL
+    const data = ProjectsData.Projects.find(item => item.id === id); // TROUVE LE BON ID CORRESPONDANT
 
     return (
         <>

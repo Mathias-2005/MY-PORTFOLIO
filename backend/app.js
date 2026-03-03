@@ -1,5 +1,5 @@
-import express from 'express';
-import mongoose from 'mongoose';
+import express from 'express'; // PACKAGE EXPRESS
+import mongoose from 'mongoose'; // PACKAGE MONGOOSE
 import { sendContactEmail } from './emailService.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// CONNECT DB
 mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/portfolio',
   { serverApi: { version: '1', strict: true, deprecationErrors: true } })
   .then(() => console.log('Connexion à MongoDB réussie !'))
@@ -33,7 +34,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ROUTES API 
-
 app.post('/api/contact', async (req, res) => {
   try {
     const { name, email, message } = req.body;
@@ -75,7 +75,7 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-// Route API pour vérifier le serveur
+// ROUTE API POUR VERIFIER LE SERVEUR
 app.get('/api/status', (req, res) => {
   res.json({ 
     message: 'Bienvenue sur Portfolio API',
@@ -84,16 +84,15 @@ app.get('/api/status', (req, res) => {
   });
 });
 
-// Servir les fichiers statiques du frontend
+// SERVIR LES FICHIERS STATIQUES DU FRONTEND
 app.use(express.static(path.join(__dirname, '../dist')));
 
-// Fallback pour SPA - rediriger tout vers index.html
+// FALLBACK REDIRIGER TOUT VERS INDEX.HTML
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 // GESTION DES ERREURS 
-
 app.use((err, req, res, next) => {
   console.error('Erreur:', err);
   res.status(err.status || 500).json({ 

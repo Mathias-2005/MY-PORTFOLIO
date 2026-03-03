@@ -3,6 +3,7 @@ import '../components/Stack.scss';
 import ProjectsData from '../data/ProjectsData.json';
 import { useTranslation } from 'react-i18next';
 
+// VARIABLE QUI CONTIENT LES TECHS AVEC IMG
 const techLogos = {
     "HTML": "/images/html-css.webp",
     "JAVASCRIPT": "/images/javascript.webp",
@@ -15,10 +16,10 @@ const techLogos = {
 
 function Stack() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation(); // TRADUCTION MESSAGE
 
-    const { id } = useParams();
-    const data = ProjectsData.Projects.find(item => item.id === id);
+    const { id } = useParams(); //ID EN PARAMETTRE URL
+    const data = ProjectsData.Projects.find(item => item.id === id); // TROUVE LE BON ID CORRESPONDANT
 
     return (
         <>

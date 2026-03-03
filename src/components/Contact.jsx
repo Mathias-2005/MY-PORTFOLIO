@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 function Contact() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation(); // TRADUCTION MESSAGE
 
     const [formData, setFormData] = useState({
         name: '',
@@ -15,10 +15,10 @@ function Contact() {
     const [loading, setLoading] = useState(false);
     const [feedback, setFeedback] = useState({ type: '', message: '' });
 
-    const MaxChars = 1000;
+    const MaxChars = 1000; // MAX 1000 CHARACTER
     const remaining = MaxChars - formData.message.length;
 
-    // Gérer les changements d'input
+    // GERER LES CHAGEMENTS D'INPUT
     const handleInputChange = (e) => {
         const { id, value } = e.target;
         setFormData({ ...formData, [id]: value });
@@ -26,7 +26,7 @@ function Contact() {
         setFeedback({ type: '', message: '' });
     };
 
-    // Gérer le changement du message avec limite de caractères
+    // GERER LES CHANGEMENT DU MESSAGE AVEC LIMITE DU CHARACTER
     const handleMessageChange = (e) => {
         const value = e.target.value;
         if (value.length <= MaxChars) {
@@ -35,11 +35,11 @@ function Contact() {
         }
     };
 
-    // Soumettre le formulaire
+    // SOUMETTRE LE FORM
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Validation basique
+        // VALIDATION
         if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
             setFeedback({
                 type: 'error',
@@ -48,7 +48,7 @@ function Contact() {
             return;
         }
 
-        // Validation email
+        // VALIDATION MAIL
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(formData.email)) {
             setFeedback({
@@ -60,6 +60,7 @@ function Contact() {
 
         setLoading(true);
 
+        // FETCH API POST
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
@@ -80,7 +81,7 @@ function Contact() {
                     type: 'success',
                     message: t('Contact.success-message') || 'Votre message a été envoyé avec succès ! ✅'
                 });
-                // Réinitialiser le formulaire
+                // RESET LE FORM
                 setFormData({
                     name: '',
                     email: '',
@@ -153,7 +154,7 @@ function Contact() {
                             </label>
                             <span className='contact__chars'>{formData.message.length} / {MaxChars}</span>
                         </div>
-                        {/* Message de feedback (succès/erreur) */}
+                        {/* MESSAGE DE FEEDBACK (succès/erreur) */}
                         {feedback.message && (
                             <div className={`contact__feedback contact__feedback--${feedback.type}`}>
                                 {feedback.message}

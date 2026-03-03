@@ -1,4 +1,25 @@
 {
+    "Stack": [
+        {
+            "frontend": [
+                "HTML",
+                "JAVASCRIPT",
+                "REACT",
+                "SCSS/SASS"
+            ],
+            "backend": [
+                "NODEJS",
+                "API",
+                "MONGODB"
+            ],
+            "tools": [
+                "GIT",
+                "GITHUB",
+                "VSCODE"
+            ]
+        }
+    ],
+    
     "Projects": [
         {
             "id": "1",
@@ -13,7 +34,6 @@
             "picture": "/images/Screenshot_Sophie.webp",
             "preview": "/images/Screenshot_sophie_preview.png"
         },
-
         {
             "id": "2",
             "title": "Kasa",
@@ -28,7 +48,6 @@
             "picture": "/images/Screenshot_Kasa.webp",
             "preview": "/images/Screenshot_kasa_preview.png"
         },
-
         {
             "id": "3",
             "title": "Mon vieux grimoire",

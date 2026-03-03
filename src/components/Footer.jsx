@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 function Footer() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation(); // TRADUCTION MESSAGE
 
     return (
         <>

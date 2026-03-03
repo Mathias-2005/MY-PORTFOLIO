@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 function About() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation(); // TRADUCTION MESSAGE
 
     return (
         <>
@@ -25,7 +25,17 @@ function About() {
                             }}
                             aria-label="Télécharger mon CV"
                         >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-download w-5 h-5">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-download w-5 h-5">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                 <polyline points="7 10 12 15 17 10"></polyline>
                                 <line x1="12" x2="12" y1="15" y2="3"></line>
@@ -56,7 +66,7 @@ function About() {
                                     aria-label="LinkedIn logo"
                                 >
                                     <circle cx="64" cy="64" r="48" fill="currentColor" />
-                                    <rect x="16" y="128" width="96" height="320" fill="currentColor"/>
+                                    <rect x="16" y="128" width="96" height="320" fill="currentColor" />
                                     <path
                                         d="M160 128h96v48c22-36 62-56 112-56
                                         88 0 144 56 144 160v168h-96V304
@@ -70,7 +80,18 @@ function About() {
                                 onClick={() => window.location.href = "mailto:mathiasmaillydepinho@gmail.com"}
                                 aria-label="Envoyer un email"
                             >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail w-5 h-5"><rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    className="lucide lucide-mail w-5 h-5">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                                 </svg>
                             </button>
@@ -78,7 +99,12 @@ function About() {
                     </div>
                 </div>
                 <div>
-                    <img src="/images/Mathias.webp" className='about__img' alt="Photo de moi :)" fetchPriority="high" loading="eager" />
+                    <img
+                        src="/images/Mathias.webp"
+                        className='about__img'
+                        alt="Photo de moi :)"
+                        fetchPriority="high"
+                        loading="eager" />
                 </div>
             </div>
         </>

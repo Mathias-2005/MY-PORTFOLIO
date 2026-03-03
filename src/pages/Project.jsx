@@ -7,9 +7,10 @@ import Stack from "../components/Stack";
 
 function Project() {
     
-    const { id } = useParams();
-    const projects = ProjectData.Projects.find(item => item.id === id)
+    const { id } = useParams(); //ID EN PARAMETTRE URL
+    const projects = ProjectData.Projects.find(item => item.id === id) // TROUVE LE BON ID CORRESPONDANT
 
+    // SI ERREUR URL D'ID ALORS ERROR PAGE
     if (!projects) {
         return (
             <>

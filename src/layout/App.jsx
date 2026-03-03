@@ -11,7 +11,7 @@ function App() {
                     <Header />
                 </header>
                 <main>
-                    <Outlet />
+                    <Outlet /> {/* RENVOIE LA PAGE CORRESPONDANT */}
                 </main>
                 <footer>
                     <Footer />

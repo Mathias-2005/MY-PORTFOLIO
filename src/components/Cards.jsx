@@ -3,11 +3,11 @@ import '../components/Cards.scss';
 import ProjectsData from '../data/ProjectsData.json';
 import { useTranslation } from 'react-i18next';
 
-const projects = ProjectsData.Projects; // ON RECUPERE LES DATAS DE NOS PROJETS
+const projects = ProjectsData.Projects; // ON RECUPERE LES DATAS DES PROJETS
 
 function Cards() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation(); // TRADUCTION MESSAGE
 
     return (
 
@@ -16,8 +16,13 @@ function Cards() {
                 <h2 className='projects__title'>{t('Cards.title')}</h2>
                 <div className='projects__cards'>
                     {projects.map((e) => (
-                        <Link to={`/project/${e.id}`} key={e.id} className='projects__card'>
-                            <img src={e.picture} alt={`Photo de mon projets ${e.title}`} title={e.title} />
+                        <Link to={`/project/${e.id}`}
+                            key={e.id}
+                            className='projects__card'>
+                            <img
+                                src={e.picture}
+                                alt={`Photo de mon projets ${e.title}`}
+                                title={e.title} />
                             <div className='projects__overlay'>
                                 <p className='projects__name'>{e.title}</p>
                             </div>

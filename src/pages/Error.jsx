@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 function Error() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation(); // TRADUCTION MESSAGE
 
     return (
         <>

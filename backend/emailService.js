@@ -1,8 +1,8 @@
 import dotenv from 'dotenv';
-dotenv.config();  // ← Ajoutez cette ligne !
-import sgMail from '@sendgrid/mail';
+dotenv.config();
+import sgMail from '@sendgrid/mail'; // PACKAGE SENDGRID 
 
-// Configurer SendGrid avec la clé API
+// CONFIG SENGRID AVEC LA KEY SECRET
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const CONTACT_EMAIL = process.env.EMAIL_TO || 'mathiasmaillydepinho@gmail.com';
