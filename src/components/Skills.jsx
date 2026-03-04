@@ -1,33 +1,60 @@
 import '../components/Skills.scss';
 import { useTranslation } from 'react-i18next';
-import ProjectsData from '../data/ProjectsData.json';
 
 function Skills() {
 
     const { t } = useTranslation(); // TRADUCTION MESSAGE
 
-    const data = ProjectsData.Stack[0]; // VARIABLE DATA STACK SOUS FORME DE TABLEAU
-
     // VARIABLE QUI CONTIENT FRONT
     const techsfront = {
-        "HTML": "/images/html-css.webp",
-        "JAVASCRIPT": "/images/javascript.webp",
-        "REACT": "/images/react.webp",
-        "SCSS/SASS": "/images/sass.webp",
+        "HTML": {
+            image: "/images/html-css.webp",
+            url: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        "JAVASCRIPT": {
+            image: "/images/javascript.webp",
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        "REACT": {
+            image: "/images/react.webp",
+            url: "https://react.dev"
+        },
+        "SCSS/SASS": {
+            image: "/images/sass.webp",
+            url: "https://sass-lang.com"
+        }
     }
 
     // VARIABLE QUI CONTIENT BACK
     const techsback = {
-        "NODEJS": "/images/nodejs.webp",
-        "API": "/images/api.webp",
-        "MONGODB": "/images/mongodb.webp"
+        "NODEJS": {
+            image: "/images/nodejs.webp",
+            url: "https://nodejs.org"
+        },
+        "API": {
+            image: "/images/api.webp",
+            url: "https://restfulapi.net"
+        },
+        "MONGODB": {
+            image: "/images/mongodb.webp",
+            url: "https://www.mongodb.com"
+        }
     }
 
     // VARIABLE QUI CONTIENT TOOLS
     const techstools = {
-        "GIT": "/images/git.webp",
-        "GITHUB": "/images/github.webp",
-        "VSCODE": "/images/vscode.webp"
+        "GIT": {
+            image: "/images/git.webp",
+            url: "https://git-scm.com"
+        },
+        "GITHUB": {
+            image: "/images/github.webp",
+            url: "https://github.com"
+        },
+        "VSCODE": {
+            image: "/images/vscode.webp",
+            url: "https://code.visualstudio.com"
+        }
     }
 
     return (
@@ -38,18 +65,16 @@ function Skills() {
                     <div className='skills__front-back-container'>
                         <h3 className='skills__title-tech'>{t('Skills.frontend')}</h3>
                         <div className='skills__techs'>
-                            {data.frontend.map((tech) => (
-                                <div key={tech} className='skills__container'>
-                                    {techsfront[tech] ? (
+                            {Object.entries(techsfront).map(([name, data]) => (
+                                <div key={name} className='skills__container'>
+                                    <a href={data.url} target='_blank' rel='noopener noreferrer'>
                                         <img
-                                            src={techsfront[tech]}
-                                            alt={`Logo de ${tech}`}
-                                            title={tech}
+                                            src={data.image}
+                                            alt={`Logo de ${name}`}
+                                            title={name}
                                             className='skills__logo'
                                         />
-                                    ) : (
-                                        <span>{tech}</span>
-                                    )}
+                                    </a>
                                 </div>
                             ))}
                         </div>
@@ -57,18 +82,16 @@ function Skills() {
                     <div className='skills__front-back-container'>
                         <h3 className='skills__title-tech'>{t('Skills.backend')}</h3>
                         <div className='skills__techs'>
-                            {data.backend.map((tech) => (
-                                <div key={tech} className='skills__container'>
-                                    {techsback[tech] ? (
+                            {Object.entries(techsback).map(([name, data]) => (
+                                <div key={name} className='skills__container'>
+                                    <a href={data.url} target='_blank' rel='noopener noreferrer'>
                                         <img
-                                            src={techsback[tech]}
-                                            alt={`Logo de ${tech}`}
-                                            title={tech}
+                                            src={data.image}
+                                            alt={`Logo de ${name}`}
+                                            title={name}
                                             className='skills__logo'
                                         />
-                                    ) : (
-                                        <span>{tech}</span>
-                                    )}
+                                    </a>
                                 </div>
                             ))}
                         </div>
@@ -79,18 +102,16 @@ function Skills() {
                 </div>
                 <div className='skills__tools'>
                     <div className='skills__tool'>
-                        {data.tools.map((tech) => (
-                            <div key={tech} className='skills__container'>
-                                {techstools[tech] ? (
+                        {Object.entries(techstools).map(([name, data]) => (
+                            <div key={name} className='skills__container'>
+                                <a href={data.url} target='_blank' rel='noopener noreferrer'>
                                     <img
-                                        src={techstools[tech]}
-                                        alt={`Logo de ${tech}`}
-                                        title={tech}
+                                        src={data.image}
+                                        alt={`Logo de ${name}`}
+                                        title={name}
                                         className='skills__logo'
                                     />
-                                ) : (
-                                    <span>{tech}</span>
-                                )}
+                                </a>
                             </div>
                         ))}
                     </div>

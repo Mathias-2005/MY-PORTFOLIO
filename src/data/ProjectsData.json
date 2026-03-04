@@ -1,25 +1,4 @@
-{
-    "Stack": [
-        {
-            "frontend": [
-                "HTML",
-                "JAVASCRIPT",
-                "REACT",
-                "SCSS/SASS"
-            ],
-            "backend": [
-                "NODEJS",
-                "API",
-                "MONGODB"
-            ],
-            "tools": [
-                "GIT",
-                "GITHUB",
-                "VSCODE"
-            ]
-        }
-    ],
-    
+{   
     "Projects": [
         {
             "id": "1",

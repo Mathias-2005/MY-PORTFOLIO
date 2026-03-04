@@ -17,8 +17,8 @@ function About() {
                             className='about__btn-cv'
                             onClick={() => {
                                 const link = document.createElement('a');
-                                link.href = '/cv.pdf';
-                                link.download = 'cv.pdf';
+                                link.href = '/CV_Mathias_Mailly_de_pinho.pdf';
+                                link.download = 'CV_Mathias_Mailly_de_pinho.pdf';
                                 document.body.appendChild(link);
                                 link.click();
                                 document.body.removeChild(link);

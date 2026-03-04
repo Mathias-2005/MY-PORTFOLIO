@@ -5,13 +5,34 @@ import { useTranslation } from 'react-i18next';
 
 // VARIABLE QUI CONTIENT LES TECHS AVEC IMG
 const techLogos = {
-    "HTML": "/images/html-css.webp",
-    "JAVASCRIPT": "/images/javascript.webp",
-    "REACT": "/images/react.webp",
-    "SCSS/SASS": "/images/sass.webp",
-    "NODEJS": "/images/nodejs.webp",
-    "API": "/images/api.webp",
-    "MONGODB": "/images/mongodb.webp"
+    "HTML": {
+        image: "/images/html-css.webp",
+        url: "https://developer.mozilla.org/fr/docs/Web/HTML"
+    },
+    "JAVASCRIPT": {
+        image: "/images/javascript.webp",
+        url: "https://developer.mozilla.org/fr/docs/Web/JavaScript"
+    },
+    "REACT": {
+        image: "/images/react.webp",
+        url: "https://react.dev/"
+    },
+    "SCSS/SASS": {
+        image: "/images/sass.webp",
+        url: "https://sass-lang.com/"
+    },
+    "NODEJS": {
+        image: "/images/nodejs.webp",
+        url: "https://nodejs.org/"
+    },
+    "API": {
+        image: "/images/api.webp",
+        url: "https://restfulapi.net/"
+    },
+    "MONGODB": {
+        image: "/images/mongodb.webp",
+        url: "https://www.mongodb.com/"
+    }
 }
 
 function Stack() {
@@ -27,17 +48,15 @@ function Stack() {
                 <h2 className="stack__title">{t('Stack.title')}</h2>
                 <div className='stack__container'>
                     {data.technologies.map((tech) => (
-                        <div key={tech} className='stack__techs'> 
-                            {techLogos[tech] ? (
+                        <div key={tech} className='stack__techs'>
+                            <a href={techLogos[tech].url} target='_blank' rel='noopener noreferrer'>
                                 <img
-                                    src={techLogos[tech]}
+                                    src={techLogos[tech].image}
                                     alt={`Logo de ${tech}`}
                                     title={tech}
                                     className='stack__logo'
                                 />
-                            ) : (
-                                <span>{tech}</span>
-                            )}
+                            </a>
                         </div>
                     ))}
                 </div>
