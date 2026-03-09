@@ -3,6 +3,7 @@ import App from '../layout/App';
 import Home from '../pages/Home';
 import Error from '../pages/Error';
 import Project from '../pages/Project';
+import ScrollToTop from '../components/ScrollToTop';
 
 // TABLEAU AVEC TOUT LES CHILDREN DES ROUTES
 const childrenRoutes = [
@@ -28,6 +29,7 @@ function Routing() {
             ))}
           </Route>
         </Routes>
+        <ScrollToTop />
       </BrowserRouter>
     </div>
   )

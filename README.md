@@ -40,7 +40,7 @@ Si votre entreprise recrute, n'hésitez pas à me contacter !
 
 **Email** : mathiasmaillydepinho@gmail.com
 
-**GitHub** : Mathias-2005
+**GitHub** : [Mathias-2005](https://github.com/Mathias-2005)
 
 **Portfolio Web** : https://portfolio-mathias-maillydepinho.onrender.com
 
