@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import '../components/Stack.scss';
 import ProjectsData from '../data/ProjectsData.json';
 import { useTranslation } from 'react-i18next';
+import AnimatedSection from './AnimatedSection';
 
 // VARIABLE QUI CONTIENT LES TECHS AVEC IMG
 const techLogos = {
@@ -45,21 +46,23 @@ function Stack() {
     return (
         <>
             <div className="stack">
-                <h2 className="stack__title">{t('Stack.title')}</h2>
-                <div className='stack__container'>
-                    {data.technologies.map((tech) => (
-                        <div key={tech} className='stack__techs'>
-                            <a href={techLogos[tech].url} target='_blank' rel='noopener noreferrer'>
-                                <img
-                                    src={techLogos[tech].image}
-                                    alt={`Logo de ${tech}`}
-                                    title={tech}
-                                    className='stack__logo'
-                                />
-                            </a>
-                        </div>
-                    ))}
-                </div>
+                <AnimatedSection>
+                    <h2 className="stack__title">{t('Stack.title')}</h2>
+                    <div className='stack__container'>
+                        {data.technologies.map((tech) => (
+                            <div key={tech} className='stack__techs'>
+                                <a href={techLogos[tech].url} target='_blank' rel='noopener noreferrer'>
+                                    <img
+                                        src={techLogos[tech].image}
+                                        alt={`Logo de ${tech}`}
+                                        title={tech}
+                                        className='stack__logo'
+                                    />
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                </AnimatedSection>
             </div>
         </>
     )

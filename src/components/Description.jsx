@@ -2,6 +2,7 @@ import '../components/Description.scss';
 import { useParams } from "react-router-dom";
 import ProjectsData from '../data/ProjectsData.json';
 import { useTranslation } from 'react-i18next';
+import AnimatedSection from './AnimatedSection';
 
 function Description() {
 
@@ -12,12 +13,14 @@ function Description() {
 
     return (
         <>
+            <AnimatedSection>
             <div className='description'>
-                <h2 className='description__title'>{t('Description.title')}</h2>
-                <div className='description__container'>
-                    <p className='description__p'>{t(`Projects.${id}.description`)}</p>
-                </div>
+                    <h2 className='description__title'>{t('Description.title')}</h2>
+                    <div className='description__container'>
+                        <p className='description__p'>{t(`Projects.${id}.description`)}</p>
+                    </div>
             </div>
+            </AnimatedSection>
         </>
     )
 }

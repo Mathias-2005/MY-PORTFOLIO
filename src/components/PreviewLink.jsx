@@ -2,6 +2,7 @@ import '../components/PreviewLink.scss';
 import { useParams } from 'react-router-dom';
 import ProjectsData from '../data/ProjectsData.json';
 import { useTranslation } from 'react-i18next';
+import AnimatedSection from './AnimatedSection'; 
 
 function PreviewLink() {
 
@@ -13,6 +14,7 @@ function PreviewLink() {
     return (
         <>
             <div className='preview'>
+                <AnimatedSection>
                 <h1 className='preview__title'>{data.title}</h1>
                 <div className='preview__img'>
                     <a href={data.demo} target='_blank'>
@@ -59,6 +61,7 @@ function PreviewLink() {
                         </button>
                     </a>
                 </div>
+                </AnimatedSection>
             </div>
         </>
     )

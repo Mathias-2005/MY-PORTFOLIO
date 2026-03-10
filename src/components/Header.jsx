@@ -34,7 +34,6 @@ function Header() {
 
     return (
         <>
-
             <div className="container">
                 <div className="container__logo">
                     <NavLink to="/">
@@ -44,6 +43,7 @@ function Header() {
                             className='container__logo-mathias' />
                     </NavLink>
                     <h2 className='container__title'>{t('Header.title')}</h2>
+                    
                 </div>
                 <div className="container__links">
                     {/* SI URL PROJECT/:ID ALORS OFF */}

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../components/Contact.scss';
 import { useTranslation } from 'react-i18next';
+import AnimatedSection from './AnimatedSection';
 
 function Contact() {
 
@@ -107,71 +108,73 @@ function Contact() {
     return (
         <>
             <div className='contact' id='contact'>
-                <h2 className='contact__title'>{t('Contact.title')}</h2>
-                <div className='contact__container'>
-                    <form onSubmit={handleSubmit}>
-                        <div className='contact__info'>
-                            <div className='contact__name'>
-                                <label htmlFor="name">
-                                    <p className='contact__subtitle'>{t('Contact.name')}</p>
+                <AnimatedSection>
+                    <h2 className='contact__title'>{t('Contact.title')}</h2>
+                    <div className='contact__container'>
+                        <form onSubmit={handleSubmit}>
+                            <div className='contact__info'>
+                                <div className='contact__name'>
+                                    <label htmlFor="name">
+                                        <p className='contact__subtitle'>{t('Contact.name')}</p>
+                                        <textarea
+                                            id='name'
+                                            value={formData.name}
+                                            onChange={handleInputChange}
+                                            placeholder={t('Contact.placeholder-name')}
+                                            className='contact__input'
+                                            disabled={loading}
+                                        />
+                                    </label>
+                                </div>
+                                <div className='contact__email'>
+                                    <label htmlFor="email">
+                                        <p className='contact__subtitle'>{t('Contact.email')}</p>
+                                        <textarea
+                                            id='email'
+                                            type="email"
+                                            value={formData.email}
+                                            onChange={handleInputChange}
+                                            placeholder={t('Contact.placeholder-email')}
+                                            className='contact__input'
+                                            disabled={loading}
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <label htmlFor="message">
+                                    <p className='contact__subtitle'>{t('Contact.message')}</p>
                                     <textarea
-                                        id='name'
-                                        value={formData.name}
-                                        onChange={handleInputChange}
-                                        placeholder={t('Contact.placeholder-name')}
-                                        className='contact__input'
+                                        id='message'
+                                        value={formData.message}
+                                        onChange={handleMessageChange}
+                                        maxLength={MaxChars}
+                                        className='contact__input-message'
+                                        placeholder={t('Contact.placeholder-message')}
                                         disabled={loading}
                                     />
                                 </label>
+                                <span className='contact__chars'>{formData.message.length} / {MaxChars}</span>
                             </div>
-                            <div className='contact__email'>
-                                <label htmlFor="email">
-                                    <p className='contact__subtitle'>{t('Contact.email')}</p>
-                                    <textarea
-                                        id='email'
-                                        type="email"
-                                        value={formData.email}
-                                        onChange={handleInputChange}
-                                        placeholder={t('Contact.placeholder-email')}
-                                        className='contact__input'
-                                        disabled={loading}
-                                    />
-                                </label>
-                            </div>
-                        </div>
-                        <div>
-                            <label htmlFor="message">
-                                <p className='contact__subtitle'>{t('Contact.message')}</p>
-                                <textarea
-                                    id='message'
-                                    value={formData.message}
-                                    onChange={handleMessageChange}
-                                    maxLength={MaxChars}
-                                    className='contact__input-message'
-                                    placeholder={t('Contact.placeholder-message')}
-                                    disabled={loading}
-                                />
-                            </label>
-                            <span className='contact__chars'>{formData.message.length} / {MaxChars}</span>
-                        </div>
-                        {/* MESSAGE DE FEEDBACK (succès/erreur) */}
-                        {feedback.message && (
-                            <div className={`contact__feedback contact__feedback--${feedback.type}`}>
-                                {feedback.message}
-                            </div>
-                        )}
+                            {/* MESSAGE DE FEEDBACK (succès/erreur) */}
+                            {feedback.message && (
+                                <div className={`contact__feedback contact__feedback--${feedback.type}`}>
+                                    {feedback.message}
+                                </div>
+                            )}
 
-                        <div className='contact__btn'>
-                            <button
-                                type='submit'
-                                className='contact__submit'
-                                disabled={loading}
-                            >
-                                {loading ? (t('Contact.sending') || 'Envoi...') : (t('Contact.send') || 'Envoyer')}
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                            <div className='contact__btn'>
+                                <button
+                                    type='submit'
+                                    className='contact__submit'
+                                    disabled={loading}
+                                >
+                                    {loading ? (t('Contact.sending') || 'Envoi...') : (t('Contact.send') || 'Envoyer')}
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </AnimatedSection>
             </div>
         </>
     )
