@@ -44,7 +44,7 @@ Si votre entreprise recrute, n'hésitez pas à me contacter !
 
 **Portfolio Web** : https://portfolio-mathias-maillydepinho.onrender.com
 
-**LinkedIn** : https://www.linkedin.com/in/mathias-mailly-de-pinho-4b7b303b0/
+**LinkedIn** : [www.linkedin.com/in/mathias-mailly-de-pinho-3b89b63b7](https://www.linkedin.com/in/mathias-mailly-de-pinho-3b89b63b7/)
 
 ## 🤝 Contribution & Feedback
 
