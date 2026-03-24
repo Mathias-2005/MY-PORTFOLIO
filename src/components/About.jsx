@@ -57,7 +57,7 @@ function About() {
                                 </button>
                                 <button
                                     className='about__btn-link'
-                                    onClick={() => window.open("En cour...", "_blank")}
+                                    onClick={() => window.open("www.linkedin.com/in/mathiasmaillydepinho", "_blank")}
                                     aria-label="Visiter mon profil LinkedIn"
                                 >
                                     <svg

@@ -13,7 +13,7 @@ function Footer() {
                     </div>
                     <div className='footer__links'>
                         <a className='footer__link' href="https://github.com/Mathias-2005" target='_blank'>{t('Footer.github')}</a>
-                        <a className='footer__link' href="En cour..." target='_blank'>{t('Footer.linkedin')}</a>
+                        <a className='footer__link' href="www.linkedin.com/in/mathiasmaillydepinho" target='_blank'>{t('Footer.linkedin')}</a>
                         <a className='footer__link' href="mailto:mathiasmaillydepinho@gmail.com" target='_blank'>{t('Footer.email')}</a>
                     </div>
             </div>
