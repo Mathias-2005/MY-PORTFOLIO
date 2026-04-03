@@ -54,4 +54,4 @@ Ce portfolio est ouvert aux améliorations ! Si vous avez des suggestions ou tro
 2. Proposer une pull request pour des améliorations
 3. Me contacter directement pour du feedback
 
-**Dernière mise à jour**: Mars 2026
+**Dernière mise à jour**: Avril 2026
