@@ -3,7 +3,7 @@
         {
             "id": "1",
             "title": "Sophie Bluel",
-            "description": "Projet – Page web dynamique en JavaScript. Développement d’une application front-end dynamique pour le portfolio d’une architecte d’intérieur, dans un contexte simulant une mission en agence web. \nn Ce projet met en œuvre : La manipulation du DOM en JavaScript. La gestion des événements utilisateurs. La récupération et l’exploitation de données via une API. L’intégration en HTML/CSS et JavaScript. Il démontre ma capacité à concevoir des interfaces interactives, à structurer un code front-end propre et à répondre à un cahier des charges dans un environnement proche du monde professionnel.",
+            "description": "Projet – Page web dynamique en JavaScript. Développement d’une application front-end dynamique pour le portfolio d’une architecte d’intérieur, dans un contexte simulant une mission en agence web. \n Ce projet met en œuvre : La manipulation du DOM en JavaScript. La gestion des événements utilisateurs. La récupération et l’exploitation de données via une API. L’intégration en HTML/CSS et JavaScript. Il démontre ma capacité à concevoir des interfaces interactives, à structurer un code front-end propre et à répondre à un cahier des charges dans un environnement proche du monde professionnel.",
             "technologies": [
                 "HTML",
                 "JAVASCRIPT"
@@ -40,6 +40,32 @@
             "demo": "https://p6-openclassrooms-front.onrender.com/",
             "picture": "/images/Screenshot_Monvieuxgrimoire.webp",
             "preview": "/images/Screenshot_grimoire_preview.png"
+        },
+        {
+            "id": "4",
+            "title": "Booki",
+            "description": "Projet – Page d’accueil responsive pour une agence de voyage. Développement de la page d’accueil d’une agence de voyage en HTML et CSS, à partir de maquettes Figma déclinées en versions mobile, tablette et desktop, dans un contexte simulant une mission de développement front-end. Ce projet met en œuvre : L’intégration précise d’une maquette Figma en respectant le design fourni, la création d’une interface responsive adaptée à tous les types d’écrans, la structuration sémantique en HTML5, la mise en page et le stylisme en CSS3, la validation du code selon les standards W3C, l’utilisation d’un environnement de développement professionnel avec Visual Studio Code",
+            "technologies": [
+                "HTML"
+            ],
+            "github": "https://github.com/Mathias-2005/BOOKI-OPENCLASSROOMS-P2",
+            "demo": "https://booki-openclassrooms-p2.vercel.app/",
+            "picture": "/images/Screenshot_booki.webp",
+            "preview": "/images/Screenshot_booki_preview.png"
+        },
+        {
+            "id": "5",
+            "title": "Antony Jazet",
+            "description": "Projet réalisé pour un peintre – Site vitrine de présentation de ses œuvres. J’ai eu l’opportunité de concevoir et développer un site vitrine dédié à un peintre, ayant pour objectif de mettre en valeur ses différentes œuvres artistiques à travers une interface moderne, claire et intuitive. Ce projet avait pour but de créer une présence en ligne professionnelle permettant d’exposer ses peintures, de présenter son univers artistique ainsi que de faciliter la découverte de son travail par les visiteurs. Ce projet m’a permis de renforcer mes compétences en développement front-end, notamment sur React, la gestion des composants, l’intégration responsive et la structuration avancée du style avec SCSS, tout en travaillant sur un cas concret orienté client et expérience utilisateur.",
+            "technologies": [
+                "JAVASCRIPT",
+                "REACT",
+                "SCSS/SASS"
+            ],
+            "github": "https://github.com/Mathias-2005/AntonyWebSite",
+            "demo": "https://antonyjazet.onrender.com/",
+            "picture": "/images/Screenshot_AntonyJazet.webp",
+            "preview": "/images/Screenshot_AntonyJazet_preview.png"
         }
     ]
 }

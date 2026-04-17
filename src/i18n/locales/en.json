@@ -24,6 +24,12 @@
         },
         "3": {
             "description": "REST API - Mon Vieux Grimoire. Back-end development of a book review website for a chain of bookstores in Old Lille, as part of a web development training course. Creation of a secure RESTful API allowing users to rate and manage literary works. Technologies: Node.js/Express/MongoDB/JavaScript. Main achievements: Design and implementation of a data model compliant with specifications. Development of complete and secure CRUD operations. Implementation of a secure data storage system. Management of user authentication and authorization. Image optimization (WebP format, compression). Adherence to Green Coding best practices for more sustainable code. Result: Functional, secure, and high-performance API with complete management of books, ratings, and users. Code available on GitHub and fully documented."
+        },
+        "4": {
+            "description" : "Project – Responsive homepage for a travel agency. Development of the homepage for a travel agency using HTML and CSS, based on Figma mockups designed for mobile, tablet, and desktop versions, within a context simulating a front-end development mission. This project involves: the accurate integration of a Figma mockup while respecting the provided design, the creation of a responsive interface adapted to all screen sizes, semantic structuring in HTML5, layout design and styling with CSS3, code validation according to W3C standards, and the use of a professional development environment with Visual Studio Code."
+        },
+        "5": {
+            "description" : "Project completed for a painter – Showcase website presenting their artworks. I had the opportunity to design and develop a showcase website dedicated to a painter, with the objective of highlighting their different artistic works through a modern, clear, and intuitive interface. The purpose of this project was to create a professional online presence to display the painter’s artworks, present their artistic universe, and make it easier for visitors to discover their work. This project allowed me to strengthen my front-end development skills, particularly in React, component management, responsive integration, and advanced styling structure using SCSS, while working on a concrete project focused on client needs and user experience."
         }
     },
     "Skills": {
